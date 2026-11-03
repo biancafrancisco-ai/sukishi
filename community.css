@@ -568,3 +568,20 @@ body {
 .btn-like.liked ion-icon {
     color: #6a2c70;
 }
+/* Ajustes para telemóveis */
+@media (max-width: 768px) {
+  .community-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar-left, .sidebar-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
