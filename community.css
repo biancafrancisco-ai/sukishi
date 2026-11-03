@@ -585,3 +585,34 @@ body {
     gap: 15px;
   }
 }
+/* Ajustes para ecrãs de telemóvel (até 768px) */
+@media (max-width: 768px) {
+  /* Torna o container principal numa coluna vertical */
+  .community-container {
+    flex-direction: column !important;
+    padding: 10px !important;
+    width: 100% !important;
+  }
+
+  /* Faz a barra de navegação superior adaptar-se */
+  .nav-container {
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  .search-bar {
+    width: 100% !important;
+  }
+
+  /* Ocupa a largura toda nas colunas laterais e feed */
+  .sidebar-left, .feed, .sidebar-right {
+    width: 100% !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  /* Ajusta caixas de publicação e posts para não rebentarem o ecrã */
+  .create-post-card, .post-card, .widget-card {
+    padding: 15px !important;
+  }
+}
