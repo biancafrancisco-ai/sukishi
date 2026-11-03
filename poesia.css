@@ -1,0 +1,122 @@
+.poetry-header .category-icon {
+    background: #f4e4ee;
+    color: #8c4d72;
+}
+
+
+/* Identificação dos poemas */
+
+.poetry-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #a06d8d;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* Título */
+
+.poetry-card .post-content h3 {
+    margin-bottom: 18px;
+    color: #382044;
+    font-size: 19px;
+}
+
+
+/* Poema */
+
+.poem {
+    padding: 20px 22px;
+    border-left: 3px solid #c69ab3;
+    border-radius: 0 12px 12px 0;
+    background: #fbf7fa;
+}
+
+.poem p {
+    margin: 0 0 18px;
+    color: #574a59;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.poem p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Tags */
+
+.poetry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 16px;
+}
+
+.poetry-tags span,
+.poetry-tags-side span {
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #f4eaf0;
+    color: #80536d;
+    font-size: 11px;
+}
+
+
+/* Poema em destaque */
+
+.featured-poem {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fbf5f8;
+}
+
+.featured-poem p {
+    margin: 0 0 10px;
+    color: #594956;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+.featured-poem span {
+    color: #a08391;
+    font-size: 10px;
+}
+
+
+/* Temas */
+
+.poetry-themes h3 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.poetry-tags-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 14px;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 700px) {
+
+    .poem {
+        padding: 16px;
+    }
+
+    .poem p {
+        font-size: 15px;
+    }
+
+}

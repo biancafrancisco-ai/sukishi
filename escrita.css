@@ -1,0 +1,101 @@
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    margin-bottom: 20px;
+    border: 1px solid #e8deeb;
+    border-radius: 16px;
+    background: white;
+}
+
+.category-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #f0e3f3;
+    color: #6a2c70;
+    font-size: 26px;
+}
+
+.category-header span {
+    color: #9a70a4;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.category-header h1 {
+    margin: 3px 0 5px;
+    color: #382044;
+    font-size: 24px;
+}
+
+.category-header p {
+    margin: 0;
+    color: #7d727f;
+    font-size: 13px;
+}
+
+
+/* Tags das publicações */
+
+.post-tag {
+    display: inline-block;
+    margin: 12px 5px 0 0;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #f2e9f4;
+    color: #6a2c70;
+    font-size: 11px;
+}
+
+
+/* Título das publicações */
+
+.post-content h3 {
+    margin: 0 0 10px;
+    color: #382044;
+    font-size: 17px;
+}
+
+
+/* Prompt */
+
+.writing-prompt h3 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.writing-prompt h3 ion-icon {
+    color: #8b5598;
+}
+
+
+/* Tags */
+
+.writing-tags h3 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 15px;
+}
+
+.tags span {
+    padding: 6px 9px;
+    border-radius: 20px;
+    background: #f4edf5;
+    color: #72567a;
+    font-size: 11px;
+}
