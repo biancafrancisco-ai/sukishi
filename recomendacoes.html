@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukishi — Recomendações</title>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="recomendacoes.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <div class="logo">
+            <ion-icon name="infinite-outline"></ion-icon>
+            <span>Sukishi</span>
+        </div>
+
+        <div class="search-bar">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Pesquisar histórias, livros ou membros...">
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html"><ion-icon name="home-outline"></ion-icon>Feed</a>
+            <a href="biblioteca.html"><ion-icon name="book-outline"></ion-icon>Biblioteca</a>
+            <a href="clubes.html"><ion-icon name="chatbubbles-outline"></ion-icon>Clubes</a>
+        </nav>
+
+        <div class="user-profile">
+            <img src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff" alt="Avatar">
+            <span>A minha conta</span>
+        </div>
+
+    </div>
+</header>
+
+
+<div class="community-container">
+
+    <!-- MENU -->
+    <aside class="sidebar-left">
+        <div class="menu-box">
+            <h3>Explorar</h3>
+
+            <ul>
+                <li><a href="index.html"><ion-icon name="sparkles-outline"></ion-icon>Tudo</a></li>
+                <li><a href="escrita.html"><ion-icon name="create-outline"></ion-icon>Escrita Criativa</a></li>
+                <li class="active"><a href="recomendacoes.html"><ion-icon name="bookmark-outline"></ion-icon>Recomendações</a></li>
+                <li><a href="poesia.html"><ion-icon name="heart-outline"></ion-icon>Poesia</a></li>
+                <li><a href="lofi.html"><ion-icon name="cafe-outline"></ion-icon>Cantinho Lo-Fi</a></li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <!-- FEED -->
+    <main class="feed">
+
+        <div id="noResults" class="no-results">
+    <ion-icon name="search-outline"></ion-icon>
+    Não existem recomendações nesta categoria ainda.
+</div>
+
+<div class="recommendation-tags">
+
+    <button type="button" class="category-filter" data-category="LIVRO">
+        📚 Livros
+    </button>
+
+    <button type="button" class="category-filter" data-category="FILME">
+        🎬 Filmes
+    </button>
+
+    <button type="button" class="category-filter" data-category="SÉRIE">
+        📺 Séries
+    </button>
+
+    <button type="button" class="category-filter" data-category="JOGO">
+        🎮 Jogos
+    </button>
+
+    <button type="button" class="category-filter" data-category="MÚSICA">
+        🎵 Música
+    </button>
+
+    <button type="button" class="category-filter active" data-category="TODOS">
+        ✨ Todos
+    </button>
+
+</div>
+
+        <div class="category-header">
+            <div class="category-icon">
+                <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+
+            <div>
+                <span>COMUNIDADE</span>
+                <h1>Recomendações</h1>
+                <p>Descobre livros, filmes, séries, jogos e músicas recomendados pela comunidade.</p>
+            </div>
+        </div>
+
+
+        <!-- CRIAR PUBLICAÇÃO -->
+        <div class="create-post-card">
+
+            <div class="post-header">
+                <img src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff" alt="Avatar">
+
+                <textarea id="postText" placeholder="O que recomendas à comunidade?"></textarea>
+            </div>
+
+            <div class="post-actions">
+
+                <div class="post-options">
+                    <button type="button" id="btnLivro">
+                        <ion-icon name="book-outline"></ion-icon>Livro
+                    </button>
+
+                    <button type="button" id="btnFilmeSerie">
+                        <ion-icon name="film-outline"></ion-icon>Filme / Série
+                    </button>
+
+                    <button type="button" id="btnJogo">
+                        <ion-icon name="game-controller-outline"></ion-icon>Jogo
+                    </button>
+                </div>
+
+                <button class="btn-publish" type="button" id="btnPublicar">
+                    Publicar
+                </button>
+
+            </div>
+        </div>
+
+
+        <!-- PUBLICAÇÕES -->
+        <article class="post-card">
+
+            <div class="post-author">
+                <img src="https://ui-avatars.com/api/?name=Ines+M&background=8c5885&color=fff" alt="Avatar">
+
+                <div>
+                    <h4>Inês Maria</h4>
+                    <span class="post-time">Há 2 horas • Recomendações</span>
+                </div>
+            </div>
+
+            <div class="post-content">
+
+                <div class="recommendation-type">
+                    <ion-icon name="book-outline"></ion-icon>
+                    LIVRO
+                </div>
+
+                <h3>A minha recomendação da semana 📖</h3>
+
+                <p>
+                    Se gostam de fantasia e histórias com personagens misteriosas,
+                    acho que este livro merece uma oportunidade. A atmosfera é incrível
+                    e fiquei completamente presa à história.
+                </p>
+
+                <div class="recommendation-box">
+                    <div class="recommendation-cover">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </div>
+
+                    <div>
+                        <h4>Os Contos Peculiares</h4>
+                        <p>Ransom Riggs</p>
+                        <span>⭐ 4.8 / 5</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+                <button type="button" class="btn-like">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>29</span> Gostos
+                </button>
+
+                <button type="button">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    7 Comentários
+                </button>
+
+                <button type="button">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    Partilhar
+                </button>
+            </div>
+
+        </article>
+
+
+        <article class="post-card">
+
+            <div class="post-author">
+                <img src="https://ui-avatars.com/api/?name=Marta+S&background=6f477c&color=fff" alt="Avatar">
+
+                <div>
+                    <h4>Marta Silva</h4>
+                    <span class="post-time">Há 4 horas • Recomendações</span>
+                </div>
+            </div>
+
+            <div class="post-content">
+
+                <div class="recommendation-type">
+                    <ion-icon name="film-outline"></ion-icon>
+                    FILME
+                </div>
+
+                <h3>Para quem quer chorar um bocadinho 🎬</h3>
+
+                <p>
+                    Vi este filme ontem e ainda estou a pensar nele.
+                    Tem uma história muito bonita e uma banda sonora maravilhosa.
+                    Preparem os lenços. 😭
+                </p>
+
+                <div class="recommendation-box">
+
+                    <div class="recommendation-cover movie-cover">
+                        <ion-icon name="film-outline"></ion-icon>
+                    </div>
+
+                    <div>
+                        <h4>A Caminho da Lua</h4>
+                        <p>Filme</p>
+                        <span>⭐ 4.7 / 5</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>36</span> Gostos
+                </button>
+
+                <button type="button">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    11 Comentários
+                </button>
+
+                <button type="button">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    Partilhar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="post-card">
+
+            <div class="post-author">
+                <img src="https://ui-avatars.com/api/?name=Leo+R&background=4f395c&color=fff" alt="Avatar">
+
+                <div>
+                    <h4>Leo Rodrigues</h4>
+                    <span class="post-time">Ontem • Recomendações</span>
+                </div>
+            </div>
+
+            <div class="post-content">
+
+                <div class="recommendation-type">
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                    JOGO
+                </div>
+
+                <h3>Um jogo que descobri recentemente</h3>
+
+                <p>
+                    Para quem gosta de explorar mundos estranhos,
+                    resolver puzzles e descobrir a história aos poucos.
+                    A atmosfera é a minha parte favorita.
+                </p>
+
+                <div class="recommendation-box">
+
+                    <div class="recommendation-cover game-cover">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    </div>
+
+                    <div>
+                        <h4>Hollow Knight</h4>
+                        <p>Videogame</p>
+                        <span>⭐ 4.9 / 5</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>43</span> Gostos
+                </button>
+
+                <button type="button">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    15 Comentários
+                </button>
+
+                <button type="button">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    Partilhar
+                </button>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- LADO DIREITO -->
+    <aside class="sidebar-right">
+
+        <!-- MAIS RECOMENDADOS -->
+        <div class="widget-card">
+
+            <h3>
+                <ion-icon name="trending-up-outline"></ion-icon>
+                Mais recomendados
+            </h3>
+
+            <div id="maisRecomendados"></div>
+
+        </div>
+
+
+        <!-- CATEGORIAS -->
+        <div class="widget-card">
+
+            <h3>
+                <ion-icon name="apps-outline"></ion-icon>
+                Explorar por categoria
+            </h3>
+
+    <div class="recommendation-tags">
+
+    <button type="button" class="category-filter" data-category="LIVRO">
+        📚 Livros
+    </button>
+
+    <button type="button" class="category-filter" data-category="FILME">
+        🎬 Filmes
+    </button>
+
+    <button type="button" class="category-filter" data-category="SÉRIE">
+        📺 Séries
+    </button>
+
+    <button type="button" class="category-filter" data-category="JOGO">
+        🎮 Jogos
+    </button>
+
+    <button type="button" class="category-filter" data-category="MÚSICA">
+        🎵 Música
+    </button>
+
+    <button type="button" class="category-filter active" data-category="TODOS">
+        ✨ Todos
+    </button>
+
+        </div>
+
+
+        <!-- SURPRESA -->
+        <div class="widget-card recommendation-tip">
+
+            <h3>
+                <ion-icon name="sparkles-outline"></ion-icon>
+                Descobre algo novo
+            </h3>
+
+            <p>
+                Não sabes o que consumir a seguir?
+                Deixa a comunidade escolher por ti.
+            </p>
+
+            <button class="btn-outline" type="button" id="btnSurpreenda">
+                Surpreenda-me
+            </button>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+                <ion-icon name="infinite-outline"></ion-icon>
+                <span>Sukishi</span>
+            </div>
+
+            <p>
+                Um cantinho para pessoas que gostam
+                de livros, escrita, poesia e histórias.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+            <h3>Explorar</h3>
+            <a href="index.html">Feed</a>
+            <a href="biblioteca.html">Biblioteca</a>
+            <a href="clubes.html">Clubes</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Comunidade</h3>
+            <a href="escrita.html">Escrita Criativa</a>
+            <a href="recomendacoes.html">Recomendações</a>
+            <a href="poesia.html">Poesia</a>
+            <a href="lofi.html">Cantinho Lo-Fi</a>
+        </div>
+
+        <div class="footer-column">
+            <h3>Sukishi</h3>
+            <a href="#">Sobre nós</a>
+            <a href="#">Termos</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Contactos</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>&copy; 2026 Sukishi. Todos os direitos reservados.</p>
+
+        <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="Discord">
+                <ion-icon name="logo-discord"></ion-icon>
+            </a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+const postText = document.getElementById("postText");
+const btnLivro = document.getElementById("btnLivro");
+const btnFilmeSerie = document.getElementById("btnFilmeSerie");
+const btnJogo = document.getElementById("btnJogo");
+const btnPublicar = document.getElementById("btnPublicar");
+const btnSurpreenda = document.getElementById("btnSurpreenda");
+const maisRecomendados = document.getElementById("maisRecomendados");
+
+let recomendacaoSelecionada = null;
+
+
+// -------------------------
+// BOTÃO
+// -------------------------
+
+function atualizarBotao(botao, icone, texto) {
+    botao.innerHTML = `<ion-icon name="${icone}"></ion-icon>${texto}`;
+}
+
+
+// -------------------------
+// ESCOLHER LIVRO
+// -------------------------
+
+btnLivro.addEventListener("click", () => {
+
+    const titulo = prompt("Qual é o nome do livro?");
+    if (!titulo?.trim()) return;
+
+    const autor = prompt("Quem é o autor?");
+    if (!autor?.trim()) return;
+
+    recomendacaoSelecionada = {
+        tipo: "LIVRO",
+        icone: "book-outline",
+        titulo: titulo.trim(),
+        autor: autor.trim()
+    };
+
+    atualizarBotao(btnLivro, "checkmark-circle-outline", "Livro selecionado");
+    postText.focus();
+});
+
+
+// -------------------------
+// ESCOLHER FILME / SÉRIE
+// -------------------------
+
+btnFilmeSerie.addEventListener("click", () => {
+
+    const nome = prompt("Qual é o nome do filme ou série?");
+    if (!nome?.trim()) return;
+
+    const tipo = prompt("É um Filme ou uma Série?");
+    if (!tipo?.trim()) return;
+
+    const serie = tipo.trim().toLowerCase() === "série" ||
+                  tipo.trim().toLowerCase() === "serie";
+
+    recomendacaoSelecionada = {
+        tipo: serie ? "SÉRIE" : "FILME",
+        icone: "film-outline",
+        titulo: nome.trim(),
+        autor: serie ? "Série" : "Filme"
+    };
+
+    atualizarBotao(btnFilmeSerie, "checkmark-circle-outline", "Selecionado");
+    postText.focus();
+});
+
+
+// -------------------------
+// ESCOLHER JOGO
+// -------------------------
+
+btnJogo.addEventListener("click", () => {
+
+    const nome = prompt("Qual é o nome do jogo?");
+    if (!nome?.trim()) return;
+
+    recomendacaoSelecionada = {
+        tipo: "JOGO",
+        icone: "game-controller-outline",
+        titulo: nome.trim(),
+        autor: "Videogame"
+    };
+
+    atualizarBotao(btnJogo, "checkmark-circle-outline", "Jogo selecionado");
+    postText.focus();
+});
+
+
+// -------------------------
+// SURPREENDA-ME
+// -------------------------
+
+btnSurpreenda.addEventListener("click", () => {
+
+    const recomendacoes = [
+        ["Os Contos Peculiares", "LIVRO", "Ransom Riggs"],
+        ["Heartstopper", "SÉRIE", "Série"],
+        ["A Caminho da Lua", "FILME", "Filme"],
+        ["Hollow Knight", "JOGO", "Videogame"],
+        ["Little Nightmares", "JOGO", "Videogame"],
+        ["O Castelo Animado", "FILME", "Filme"]
+    ];
+
+    const escolha =
+        recomendacoes[Math.floor(Math.random() * recomendacoes.length)];
+
+    alert(
+        `✨ A tua recomendação surpresa é:\n\n${escolha[0]}\n${escolha[2]}`
+    );
+});
+
+
+// -------------------------
+// PUBLICAR
+// -------------------------
+
+btnPublicar.addEventListener("click", () => {
+
+    const texto = postText.value.trim();
+
+    if (!texto && !recomendacaoSelecionada) {
+        alert("Escreve uma recomendação ou escolhe um item primeiro.");
+        return;
+    }
+
+    const item = recomendacaoSelecionada;
+
+    const novoPost = document.createElement("article");
+    novoPost.className = "post-card";
+
+    novoPost.innerHTML = `
+        <div class="post-author">
+
+            <img
+                src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                alt="Avatar"
+            >
+
+            <div>
+                <h4>Sukishi User</h4>
+                <span class="post-time">Agora • Recomendações</span>
+            </div>
+
+        </div>
+
+        <div class="post-content">
+
+            ${
+                item
+                ? `
+                <div class="recommendation-type">
+                    <ion-icon name="${item.icone}"></ion-icon>
+                    ${item.tipo}
+                </div>
+                `
+                : ""
+            }
+
+            ${
+                texto
+                ? `<p style="white-space:pre-line">${texto}</p>`
+                : ""
+            }
+
+            ${
+                item
+                ? `
+                <div class="recommendation-box">
+
+                    <div class="recommendation-cover ${
+                        item.tipo === "JOGO"
+                        ? "game-cover"
+                        : item.tipo === "FILME" || item.tipo === "SÉRIE"
+                        ? "movie-cover"
+                        : ""
+                    }">
+
+                        <ion-icon name="${item.icone}"></ion-icon>
+
+                    </div>
+
+                    <div>
+
+                        <h4>${item.titulo}</h4>
+                        <p>${item.autor}</p>
+                        <span>⭐ Nova recomendação</span>
+
+                    </div>
+
+                </div>
+                `
+                : ""
+            }
+
+        </div>
+
+        <div class="post-footer">
+
+            <button type="button" class="btn-like">
+                <ion-icon name="heart-outline"></ion-icon>
+                <span>0</span> Gostos
+            </button>
+
+            <button type="button">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                0 Comentários
+            </button>
+
+            <button type="button">
+                <ion-icon name="share-social-outline"></ion-icon>
+                Partilhar
+            </button>
+
+        </div>
+    `;
+
+    document.querySelector(".create-post-card").after(novoPost);
+
+    postText.value = "";
+    recomendacaoSelecionada = null;
+
+    atualizarBotao(btnLivro, "book-outline", "Livro");
+    atualizarBotao(btnFilmeSerie, "film-outline", "Filme / Série");
+    atualizarBotao(btnJogo, "game-controller-outline", "Jogo");
+
+    ativarGostos(novoPost);
+    atualizarMaisRecomendados();
+
+    novoPost.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+});
+
+
+// -------------------------
+// GOSTOS
+// -------------------------
+
+function ativarGostos(post) {
+
+    const botao = post.querySelector(".btn-like");
+
+    if (!botao) return;
+
+    botao.addEventListener("click", () => {
+
+        const numero = botao.querySelector("span");
+        let gostos = Number(numero.textContent);
+
+        if (botao.classList.contains("liked")) {
+            gostos--;
+            botao.classList.remove("liked");
+            botao.querySelector("ion-icon").setAttribute(
+                "name",
+                "heart-outline"
+            );
+        } else {
+            gostos++;
+            botao.classList.add("liked");
+            botao.querySelector("ion-icon").setAttribute(
+                "name",
+                "heart"
+            );
+        }
+
+        numero.textContent = gostos;
+
+        atualizarMaisRecomendados();
+    });
+}
+
+
+// Ativar gostos das publicações existentes
+document.querySelectorAll(".post-card").forEach(ativarGostos);
+
+
+// -------------------------
+// MAIS RECOMENDADOS
+// -------------------------
+
+function atualizarMaisRecomendados() {
+
+    const posts = [...document.querySelectorAll(".post-card")];
+
+    const lista = [];
+
+    posts.forEach(post => {
+
+        const titulo = post.querySelector(".recommendation-box h4");
+        const subtitulo = post.querySelector(".recommendation-box p");
+        const gostos = post.querySelector(".btn-like span");
+
+        if (!titulo || !gostos) return;
+
+        lista.push({
+            nome: titulo.textContent.trim(),
+            tipo: subtitulo
+                ? subtitulo.textContent.trim()
+                : "Recomendação",
+            gostos: Number(gostos.textContent) || 0
+        });
+
+    });
+
+
+    lista.sort((a, b) => b.gostos - a.gostos);
+
+    const top3 = lista.slice(0, 3);
+
+    maisRecomendados.innerHTML = "";
+
+    top3.forEach((item, index) => {
+
+        const elemento = document.createElement("div");
+        elemento.className = "popular-item";
+
+        elemento.innerHTML = `
+            <span>${String(index + 1).padStart(2, "0")}</span>
+
+            <div>
+                <strong>${item.nome}</strong>
+                <small>
+                    ${item.tipo} • ${item.gostos} gostos
+                </small>
+            </div>
+        `;
+
+        maisRecomendados.appendChild(elemento);
+    });
+}
+
+
+// Atualizar inicialmente
+atualizarMaisRecomendados();
+
+
+// Atualizar automaticamente a cada 5 segundos
+setInterval(atualizarMaisRecomendados, 5000);
+
+</script>
+
+</body>
+</html>

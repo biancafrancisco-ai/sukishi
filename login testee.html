@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - sukishi</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="login-card">
+    
+    <!-- Lado Esquerdo com o fundo do Gato na Janela -->
+    <div class="card-left">
+      <div class="brand-content">
+        <ion-icon name="infinite-outline" class="brand-icon"></ion-icon>
+        <h2>Turn your day with Sukishi.</h2>
+        <p>Make friends, and share recommendations and comments about your favorite books.</p>
+      </div>
+    </div>
+
+    <!-- Lado Direito com o Formulário -->
+    <div class="card-right">
+      <div class="logo-header">
+        <ion-icon name="infinite-outline"></ion-icon>
+      </div>
+      
+      <h2>Welcome Sukishi</h2>
+      <p class="subtitle">Login to your account</p>
+
+      <form>
+        <div class="input-box">
+          <label>Email</label>
+          <div class="input-field">
+            <input type="email" placeholder="nome@gmail.com" required>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label>Password</label>
+          <div class="input-field">
+            <input type="password" placeholder="••••••••" required>
+            <ion-icon name="eye-outline" class="toggle-pass"></ion-icon>
+          </div>
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+
+        <div class="divider">Or continue with</div>
+
+        <div class="social-buttons">
+          <button type="button" class="btn-social">
+            <ion-icon name="logo-google"></ion-icon> Google
+          </button>
+          <button type="button" class="btn-social">
+            <ion-icon name="logo-facebook"></ion-icon> Facebook
+          </button>
+        </div>
+
+        <div class="register">
+          Not Registered Yet? <a href="#">Create an account</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

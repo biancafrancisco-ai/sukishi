@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sukishi — Poesia</title>
+
+    <script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="poesia.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            <ion-icon name="infinite-outline"></ion-icon>
+            <span>Sukishi</span>
+        </div>
+
+        <div class="search-bar">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text"
+                   placeholder="Pesquisar histórias, livros ou membros...">
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                <ion-icon name="home-outline"></ion-icon>
+                Feed
+            </a>
+
+            <a href="biblioteca.html">
+                <ion-icon name="book-outline"></ion-icon>
+                Biblioteca
+            </a>
+
+            <a href="clubes.html">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+                Clubes
+            </a>
+
+        </nav>
+
+        <div class="user-profile">
+
+            <img
+                src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                alt="Avatar">
+
+            <span>A minha conta</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="community-container">
+
+    <!-- MENU LATERAL -->
+
+    <aside class="sidebar-left">
+
+        <div class="menu-box">
+
+            <h3>Explorar</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <ion-icon name="sparkles-outline"></ion-icon>
+                        Tudo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="escrita.html">
+                        <ion-icon name="create-outline"></ion-icon>
+                        Escrita Criativa
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recomendacoes.html">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        Recomendações
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="poesia.html">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        Poesia
+                    </a>
+                </li>
+
+                <li>
+                    <a href="lofi.html">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                        Cantinho Lo-Fi
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FEED -->
+
+    <main class="feed">
+
+        <div class="category-header poetry-header">
+
+            <div class="category-icon">
+                <ion-icon name="heart-outline"></ion-icon>
+            </div>
+
+            <div>
+
+                <span>COMUNIDADE</span>
+
+                <h1>Poesia</h1>
+
+                <p>
+                    Um cantinho para partilhar versos,
+                    sentimentos e palavras.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CRIAR POEMA -->
+
+        <div class="create-post-card">
+
+            <div class="post-header">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                    alt="Avatar">
+
+                <textarea
+                    id="poemText"
+                    placeholder="Escreve um poema, um verso ou um pensamento...">
+                </textarea>
+
+            </div>
+
+            <div class="post-actions">
+
+                <div class="post-options">
+
+                    <button type="button" id="btnImagem">
+
+                        <ion-icon name="image-outline"></ion-icon>
+
+                        Imagem
+
+                    </button>
+
+                    <button type="button" id="btnPoema">
+
+                        <ion-icon name="heart-outline"></ion-icon>
+
+                        Poema
+
+                    </button>
+
+                </div>
+
+                <button
+                    class="btn-publish"
+                    type="button"
+                    id="btnPublicar">
+
+                    Publicar
+
+                </button>
+
+            </div>
+
+            <input
+                type="file"
+                id="inputImagem"
+                accept="image/*"
+                hidden>
+
+        </div>
+
+
+        <!-- POEMA 1 -->
+
+        <article class="post-card poetry-card"
+                 data-tags="chuva melancolia poesialivre">
+
+            <div class="post-author">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Ines+M&background=8c5885&color=fff"
+                    alt="Avatar">
+
+                <div>
+
+                    <h4>Inês Maria</h4>
+
+                    <span class="post-time">
+                        Há 2 horas • Poesia
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="post-content">
+
+                <span class="poetry-label">
+                    POESIA LIVRE
+                </span>
+
+                <h3>
+                    Depois da chuva
+                </h3>
+
+                <div class="poem">
+
+                    <p>
+                        depois da chuva<br>
+                        a cidade parece outra,
+                    </p>
+
+                    <p>
+                        as luzes refletem-se<br>
+                        nas poças da rua<br>
+                        e por alguns segundos
+                    </p>
+
+                    <p>
+                        tudo parece<br>
+                        estar exatamente<br>
+                        onde devia.
+                    </p>
+
+                </div>
+
+                <div class="poetry-tags">
+
+                    <span>#chuva</span>
+                    <span>#melancolia</span>
+                    <span>#poesialivre</span>
+
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>42</span> Gostos
+                </button>
+
+                <button type="button" class="btn-comment">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    8 Comentários
+                </button>
+
+                <button type="button" class="btn-share">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    Partilhar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- POEMA 2 -->
+
+        <article class="post-card poetry-card"
+                 data-tags="sentimentos palavras">
+
+            <div class="post-author">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Marta+S&background=6f477c&color=fff"
+                    alt="Avatar">
+
+                <div>
+
+                    <h4>Marta Silva</h4>
+
+                    <span class="post-time">
+                        Há 5 horas • Poesia
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="post-content">
+
+                <span class="poetry-label">
+                    POEMA
+                </span>
+
+                <h3>
+                    Sem título
+                </h3>
+
+                <div class="poem">
+
+                    <p>
+                        guardei palavras<br>
+                        dentro de gavetas
+                    </p>
+
+                    <p>
+                        com medo de que alguém<br>
+                        as encontrasse
+                    </p>
+
+                    <p>
+                        até perceber<br>
+                        que algumas palavras<br>
+                        só existem<br>
+                        quando são ditas.
+                    </p>
+
+                </div>
+
+                <div class="poetry-tags">
+
+                    <span>#sentimentos</span>
+                    <span>#palavras</span>
+
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>37</span> Gostos
+                </button>
+
+                <button type="button" class="btn-comment">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    10 Comentários
+                </button>
+
+                <button type="button" class="btn-share">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    Partilhar
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- POEMA 3 -->
+
+        <article class="post-card poetry-card"
+                 data-tags="lua desafio noite">
+
+            <div class="post-author">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Leo+R&background=4f395c&color=fff"
+                    alt="Avatar">
+
+                <div>
+
+                    <h4>Leo Rodrigues</h4>
+
+                    <span class="post-time">
+                        Ontem • Poesia
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="post-content">
+
+                <span class="poetry-label">
+                    DESAFIO
+                </span>
+
+                <h3>
+                    Uma palavra: "Lua"
+                </h3>
+
+                <div class="poem">
+
+                    <p>
+                        a lua observa<br>
+                        aquilo que ninguém vê,
+                    </p>
+
+                    <p>
+                        fica acordada<br>
+                        quando o mundo dorme<br>
+                        e guarda segredos<br>
+                        que nunca vai contar.
+                    </p>
+
+                </div>
+
+                <div class="poetry-tags">
+
+                    <span>#lua</span>
+                    <span>#desafio</span>
+                    <span>#noite</span>
+
+                </div>
+
+            </div>
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <span>51</span> Gostos
+                </button>
+
+                <button type="button" class="btn-comment">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    13 Comentários
+                </button>
+
+                <button type="button" class="btn-share">
+                    <ion-icon name="share-social-outline"></ion-icon>
+                    Partilhar
+                </button>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- LADO DIREITO -->
+
+    <aside class="sidebar-right">
+
+
+        <!-- POEMA DO DIA -->
+
+        <div class="widget-card poem-widget">
+
+            <h3>
+                <ion-icon name="sparkles-outline"></ion-icon>
+                Poema do dia
+            </h3>
+
+            <div class="featured-poem">
+
+                <p>
+                    "Há noites que parecem<br>
+                    guardar o mundo inteiro<br>
+                    dentro de uma janela."
+                </p>
+
+                <span>
+                    — Comunidade Sukishi
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESAFIO -->
+
+        <div class="widget-card challenge-widget">
+
+            <h3>
+                <ion-icon name="trophy-outline"></ion-icon>
+                Desafio da Semana
+            </h3>
+
+            <p>
+                Escreve um poema inspirado
+                na palavra <strong>"saudade"</strong>.
+            </p>
+
+            <button
+                class="btn-outline"
+                type="button"
+                id="btnParticipar">
+
+                Participar
+
+            </button>
+
+        </div>
+
+
+        <!-- TEMAS -->
+
+        <div class="widget-card poetry-themes">
+
+            <h3>
+                <ion-icon name="pricetags-outline"></ion-icon>
+                Explorar poesia
+            </h3>
+
+            <div class="poetry-tags-side">
+
+                <button type="button" class="tema-btn" data-tag="amor">
+                    #amor
+                </button>
+
+                <button type="button" class="tema-btn" data-tag="saudade">
+                    #saudade
+                </button>
+
+                <button type="button" class="tema-btn" data-tag="natureza">
+                    #natureza
+                </button>
+
+                <button type="button" class="tema-btn" data-tag="noite">
+                    #noite
+                </button>
+
+                <button type="button" class="tema-btn" data-tag="melancolia">
+                    #melancolia
+                </button>
+
+                <button type="button" class="tema-btn" data-tag="esperança">
+                    #esperança
+                </button>
+
+                <button type="button" class="tema-btn active" data-tag="todos">
+                    ✨ Todos
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+                <ion-icon name="infinite-outline"></ion-icon>
+                <span>Sukishi</span>
+            </div>
+
+            <p>
+                Um cantinho para pessoas que gostam
+                de livros, escrita, poesia e histórias.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Explorar</h3>
+
+            <a href="index.html">Feed</a>
+            <a href="biblioteca.html">Biblioteca</a>
+            <a href="clubes.html">Clubes</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Comunidade</h3>
+
+            <a href="escrita.html">Escrita Criativa</a>
+            <a href="recomendacoes.html">Recomendações</a>
+            <a href="poesia.html">Poesia</a>
+            <a href="lofi.html">Cantinho Lo-Fi</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Sukishi</h3>
+
+            <a href="#">Sobre nós</a>
+            <a href="#">Termos</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Contactos</a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Sukishi. Todos os direitos reservados.
+        </p>
+
+        <div class="footer-social">
+
+            <a href="#" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="Discord">
+                <ion-icon name="logo-discord"></ion-icon>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+// ===============================
+// ELEMENTOS
+// ===============================
+
+const poemText = document.getElementById("poemText");
+const btnImagem = document.getElementById("btnImagem");
+const btnPoema = document.getElementById("btnPoema");
+const btnPublicar = document.getElementById("btnPublicar");
+const inputImagem = document.getElementById("inputImagem");
+const btnParticipar = document.getElementById("btnParticipar");
+
+let imagemSelecionada = null;
+
+
+// ===============================
+// IMAGEM
+// ===============================
+
+btnImagem.addEventListener("click", () => {
+    inputImagem.click();
+});
+
+
+inputImagem.addEventListener("change", () => {
+
+    const ficheiro = inputImagem.files[0];
+
+    if (!ficheiro) return;
+
+    const leitor = new FileReader();
+
+    leitor.onload = () => {
+
+        imagemSelecionada = leitor.result;
+
+        btnImagem.innerHTML = `
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Imagem selecionada
+        `;
+
+    };
+
+    leitor.readAsDataURL(ficheiro);
+});
+
+
+// ===============================
+// BOTÃO POEMA
+// ===============================
+
+btnPoema.addEventListener("click", () => {
+
+    poemText.focus();
+
+    btnPoema.innerHTML = `
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        A escrever...
+    `;
+
+});
+
+
+// ===============================
+// PUBLICAR
+// ===============================
+
+btnPublicar.addEventListener("click", () => {
+
+    const texto = poemText.value.trim();
+
+    if (!texto && !imagemSelecionada) {
+
+        alert("Escreve um poema ou adiciona uma imagem primeiro.");
+
+        return;
+    }
+
+
+    const post = document.createElement("article");
+
+    post.className = "post-card poetry-card";
+
+
+    const tags = extrairTags(texto);
+
+
+    post.dataset.tags = tags.join(" ");
+
+
+    post.innerHTML = `
+
+        <div class="post-author">
+
+            <img
+                src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                alt="Avatar">
+
+            <div>
+
+                <h4>Sukishi User</h4>
+
+                <span class="post-time">
+                    Agora • Poesia
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="post-content">
+
+            <span class="poetry-label">
+                POEMA
+            </span>
+
+            <h3>
+                ${tituloAutomatico(texto)}
+            </h3>
+
+
+            ${
+                texto
+                ?
+                `<div class="poem">
+                    <p>${texto.replace(/\n/g, "<br>")}</p>
+                </div>`
+                :
+                ""
+            }
+
+
+            ${
+                imagemSelecionada
+                ?
+                `<img
+                    src="${imagemSelecionada}"
+                    class="post-image"
+                    alt="Imagem do poema">`
+                :
+                ""
+            }
+
+
+            ${
+                tags.length
+                ?
+                `
+                <div class="poetry-tags">
+                    ${tags.map(tag => `<span>#${tag}</span>`).join("")}
+                </div>
+                `
+                :
+                ""
+            }
+
+        </div>
+
+
+        <div class="post-footer">
+
+            <button type="button" class="btn-like">
+
+                <ion-icon name="heart-outline"></ion-icon>
+
+                <span>0</span> Gostos
+
+            </button>
+
+
+            <button type="button" class="btn-comment">
+
+                <ion-icon name="chatbubble-outline"></ion-icon>
+
+                0 Comentários
+
+            </button>
+
+
+            <button type="button" class="btn-share">
+
+                <ion-icon name="share-social-outline"></ion-icon>
+
+                Partilhar
+
+            </button>
+
+        </div>
+
+    `;
+
+
+    document.querySelector(".create-post-card").after(post);
+
+
+    ativarGostos(post);
+    ativarComentarios(post);
+    ativarPartilha(post);
+
+
+    poemText.value = "";
+
+    imagemSelecionada = null;
+
+    inputImagem.value = "";
+
+
+    btnImagem.innerHTML = `
+        <ion-icon name="image-outline"></ion-icon>
+        Imagem
+    `;
+
+
+    btnPoema.innerHTML = `
+        <ion-icon name="heart-outline"></ion-icon>
+        Poema
+    `;
+
+
+    post.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+});
+
+
+// ===============================
+// TÍTULO AUTOMÁTICO
+// ===============================
+
+function tituloAutomatico(texto) {
+
+    if (!texto) return "Novo poema";
+
+    const primeiraLinha =
+        texto.split("\n")[0].trim();
+
+    if (!primeiraLinha) return "Novo poema";
+
+    return primeiraLinha.length > 35
+        ? primeiraLinha.substring(0, 35) + "..."
+        : primeiraLinha;
+}
+
+
+// ===============================
+// TAGS
+// ===============================
+
+function extrairTags(texto) {
+
+    const encontrados =
+        texto.match(/#[a-zA-ZÀ-ÿ0-9_]+/g);
+
+    if (!encontrados) return [];
+
+    return encontrados.map(tag =>
+        tag.substring(1).toLowerCase()
+    );
+
+}
+
+
+// ===============================
+// GOSTOS
+// ===============================
+
+function ativarGostos(post) {
+
+    const botao = post.querySelector(".btn-like");
+
+    if (!botao) return;
+
+
+    botao.addEventListener("click", () => {
+
+        const numero = botao.querySelector("span");
+
+        let gostos =
+            Number(numero.textContent);
+
+
+        if (botao.classList.contains("liked")) {
+
+            gostos--;
+
+            botao.classList.remove("liked");
+
+            botao.querySelector("ion-icon")
+                .setAttribute(
+                    "name",
+                    "heart-outline"
+                );
+
+        } else {
+
+            gostos++;
+
+            botao.classList.add("liked");
+
+            botao.querySelector("ion-icon")
+                .setAttribute(
+                    "name",
+                    "heart"
+                );
+
+        }
+
+
+        numero.textContent = gostos;
+
+    });
+
+}
+
+
+// Ativar nos poemas existentes
+
+document
+    .querySelectorAll(".post-card")
+    .forEach(ativarGostos);
+
+
+// ===============================
+// COMENTÁRIOS
+// ===============================
+
+function ativarComentarios(post) {
+
+    const botao =
+        post.querySelector(".btn-comment");
+
+    if (!botao) return;
+
+
+    botao.addEventListener("click", () => {
+
+        const comentario =
+            prompt("Escreve o teu comentário:");
+
+        if (!comentario?.trim()) return;
+
+
+        const textoBotao =
+            botao.textContent.match(/\d+/);
+
+        let numero =
+            textoBotao
+            ? Number(textoBotao[0])
+            : 0;
+
+
+        numero++;
+
+        botao.innerHTML = `
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            ${numero} Comentários
+        `;
+
+
+        alert("Comentário adicionado! 💜");
+
+    });
+
+}
+
+
+// ===============================
+// PARTILHAR
+// ===============================
+
+function ativarPartilha(post) {
+
+    const botao =
+        post.querySelector(".btn-share");
+
+    if (!botao) return;
+
+
+    botao.addEventListener("click", async () => {
+
+        try {
+
+            await navigator.clipboard.writeText(
+                window.location.href
+            );
+
+            alert("Link copiado! 💜");
+
+        } catch {
+
+            alert("Não foi possível copiar o link.");
+
+        }
+
+    });
+
+}
+
+
+document
+    .querySelectorAll(".post-card")
+    .forEach(ativarComentarios);
+
+
+document
+    .querySelectorAll(".post-card")
+    .forEach(ativarPartilha);
+
+
+// ===============================
+// DESAFIO
+// ===============================
+
+btnParticipar.addEventListener("click", () => {
+
+    if (
+        btnParticipar.classList.contains("participando")
+    ) {
+
+        return;
+
+    }
+
+
+    btnParticipar.textContent =
+        "Participando ✓";
+
+
+    btnParticipar.classList.add(
+        "participando"
+    );
+
+
+    alert(
+        "✨ Entraste no Desafio da Semana!\n\n" +
+        'Tema: "saudade"'
+    );
+
+});
+
+
+// ===============================
+// FILTRO DOS TEMAS
+// ===============================
+
+const botoesTema =
+    document.querySelectorAll(".tema-btn");
+
+
+botoesTema.forEach(botao => {
+
+    botao.addEventListener("click", () => {
+
+        const tema =
+            botao.dataset.tag;
+
+
+        botoesTema.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+
+        botao.classList.add("active");
+
+
+        const posts =
+            document.querySelectorAll(
+                ".feed .post-card"
+            );
+
+
+        posts.forEach(post => {
+
+            if (tema === "todos") {
+
+                post.style.display = "";
+
+                return;
+
+            }
+
+
+            const tags =
+                post.dataset.tags || "";
+
+
+            if (
+                tags
+                    .toLowerCase()
+                    .split(" ")
+                    .includes(tema.toLowerCase())
+            ) {
+
+                post.style.display = "";
+
+            } else {
+
+                post.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sukishi — Escrita Criativa</title>
+
+
+    <!-- ================================
+         ÍCONES
+    ================================= -->
+
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+
+
+    <!-- ================================
+         CSS
+    ================================= -->
+
+    <link rel="stylesheet" href="community.css">
+
+    <link rel="stylesheet" href="escrita.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVEGAÇÃO
+    ================================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <ion-icon name="infinite-outline"></ion-icon>
+
+                <span>Sukishi</span>
+
+            </div>
+
+
+
+            <!-- PESQUISA -->
+
+            <div class="search-bar">
+
+                <ion-icon name="search-outline"></ion-icon>
+
+                <input
+                    type="text"
+                    placeholder="Pesquisar histórias, livros ou membros..."
+                >
+
+            </div>
+
+
+
+            <!-- MENU -->
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+
+                    <ion-icon name="home-outline"></ion-icon>
+
+                    Feed
+
+                </a>
+
+
+                <a href="biblioteca.html">
+
+                    <ion-icon name="book-outline"></ion-icon>
+
+                    Biblioteca
+
+                </a>
+
+
+                <a href="clubes.html">
+
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+
+                    Clubes
+
+                </a>
+
+            </nav>
+
+
+
+            <!-- PERFIL -->
+
+            <div class="user-profile">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                    alt="Avatar"
+                >
+
+                <span>A minha conta</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================
+         CONTEÚDO
+    ================================= -->
+
+    <div class="community-container">
+
+
+        <!-- ================================
+             MENU LATERAL
+        ================================= -->
+
+        <aside class="sidebar-left">
+
+            <div class="menu-box">
+
+                <h3>Explorar</h3>
+
+
+                <ul>
+
+
+                    <li>
+
+                        <a href="index.html">
+
+                            <ion-icon name="sparkles-outline"></ion-icon>
+
+                            Tudo
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li class="active">
+
+                        <a href="escrita.html">
+
+                            <ion-icon name="create-outline"></ion-icon>
+
+                            Escrita Criativa
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="recomendacoes.html">
+
+                            <ion-icon name="bookmark-outline"></ion-icon>
+
+                            Recomendações
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="poesia.html">
+
+                            <ion-icon name="heart-outline"></ion-icon>
+
+                            Poesia
+
+                        </a>
+
+                    </li>
+
+
+
+                    <li>
+
+                        <a href="lofi.html">
+
+                            <ion-icon name="cafe-outline"></ion-icon>
+
+                            Cantinho Lo-Fi
+
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ================================
+             FEED
+        ================================= -->
+
+        <main class="feed">
+
+
+            <!-- ================================
+                 CABEÇALHO
+            ================================= -->
+
+            <div class="category-header">
+
+
+                <div class="category-icon">
+
+                    <ion-icon name="create-outline"></ion-icon>
+
+                </div>
+
+
+                <div>
+
+                    <span>COMUNIDADE</span>
+
+                    <h1>Escrita Criativa</h1>
+
+                    <p>
+
+                        Um espaço para criar, partilhar histórias
+                        e dar vida às tuas ideias.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 CRIAR PUBLICAÇÃO
+            ================================= -->
+
+            <div class="create-post-card">
+
+
+                <div class="post-header">
+
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                        alt="Avatar"
+                    >
+
+
+                    <textarea
+                        id="postText"
+                        placeholder="Partilha uma história, personagem ou ideia..."
+                    ></textarea>
+
+
+                </div>
+
+
+
+                <div class="post-actions">
+
+
+                    <div class="post-options">
+
+
+                        <!-- IMAGEM -->
+
+                        <button
+                            type="button"
+                            id="btnImagem"
+                        >
+
+                            <ion-icon name="image-outline"></ion-icon>
+
+                            Imagem
+
+                        </button>
+
+
+
+                        <!-- CITAR LIVRO -->
+
+                        <button
+                            type="button"
+                            id="btnLivro"
+                        >
+
+                            <ion-icon name="book-outline"></ion-icon>
+
+                            Citar Livro
+
+                        </button>
+
+
+
+                        <!-- INPUT ESCONDIDO -->
+
+                        <input
+                            type="file"
+                            id="inputImagem"
+                            accept="image/*"
+                            hidden
+                        >
+
+                    </div>
+
+
+
+                    <!-- PUBLICAR -->
+
+                    <button
+                        class="btn-publish"
+                        type="button"
+                        id="btnPublicar"
+                    >
+
+                        Publicar
+
+                    </button>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================================
+                 PUBLICAÇÃO 1
+            ================================= -->
+
+            <article class="post-card">
+
+
+                <div class="post-author">
+
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Ines+M&background=8c5885&color=fff"
+                        alt="Avatar"
+                    >
+
+
+                    <div>
+
+                        <h4>Inês Maria</h4>
+
+                        <span class="post-time">
+
+                            Há 1 hora • Escrita Criativa
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="post-content">
+
+
+                    <h3>
+
+                        Comecei finalmente a minha história!
+
+                    </h3>
+
+
+                    <p>
+
+                        A personagem principal acordou numa cidade
+                        completamente vazia. Não havia carros,
+                        pessoas ou sequer animais. Apenas uma carta
+                        deixada à porta dizia:
+                        <em>"Não devias ter acordado."</em>
+
+                    </p>
+
+
+                    <span class="post-tag">
+                        #mistério
+                    </span>
+
+
+                    <span class="post-tag">
+                        #escrita
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="post-footer">
+
+
+                    <button type="button">
+
+                        <ion-icon name="heart-outline"></ion-icon>
+
+                        31 Gostos
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        9 Comentários
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon name="share-social-outline"></ion-icon>
+
+                        Partilhar
+
+                    </button>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ================================
+                 PUBLICAÇÃO 2
+            ================================= -->
+
+            <article class="post-card">
+
+
+                <div class="post-author">
+
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Marta+S&background=6f477c&color=fff"
+                        alt="Avatar"
+                    >
+
+
+                    <div>
+
+                        <h4>Marta Silva</h4>
+
+                        <span class="post-time">
+
+                            Há 3 horas • Escrita Criativa
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="post-content">
+
+
+                    <h3>
+
+                        Preciso de ideias para uma personagem
+
+                    </h3>
+
+
+                    <p>
+
+                        Estou a criar uma personagem que vive numa
+                        cidade futurista e trabalha numa biblioteca.
+                        Quero que ela tenha algum segredo importante,
+                        mas estou sem ideias. O que fariam?
+
+                    </p>
+
+
+                    <span class="post-tag">
+                        #personagens
+                    </span>
+
+
+                    <span class="post-tag">
+                        #ajuda
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="post-footer">
+
+
+                    <button type="button">
+
+                        <ion-icon name="heart-outline"></ion-icon>
+
+                        18 Gostos
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        14 Comentários
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon name="share-social-outline"></ion-icon>
+
+                        Partilhar
+
+                    </button>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- ================================
+                 PUBLICAÇÃO 3
+            ================================= -->
+
+            <article class="post-card">
+
+
+                <div class="post-author">
+
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Leo+R&background=4f395c&color=fff"
+                        alt="Avatar"
+                    >
+
+
+                    <div>
+
+                        <h4>Leo Rodrigues</h4>
+
+                        <span class="post-time">
+
+                            Ontem • Escrita Criativa
+
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="post-content">
+
+
+                    <h3>
+
+                        Desafio concluído ✨
+
+                    </h3>
+
+
+                    <p>
+
+                        Escrevi um microconto baseado no desafio
+                        desta semana. Foi difícil conseguir contar
+                        uma história inteira em poucas palavras,
+                        mas gostei bastante do resultado.
+
+                    </p>
+
+
+                    <span class="post-tag">
+                        #desafio
+                    </span>
+
+
+                    <span class="post-tag">
+                        #microconto
+                    </span>
+
+
+                </div>
+
+
+
+                <div class="post-footer">
+
+
+                    <button type="button">
+
+                        <ion-icon name="heart-outline"></ion-icon>
+
+                        27 Gostos
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        6 Comentários
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon name="share-social-outline"></ion-icon>
+
+                        Partilhar
+
+                    </button>
+
+
+                </div>
+
+
+            </article>
+
+
+        </main>
+
+
+
+        <!-- ================================
+             LADO DIREITO
+        ================================= -->
+
+        <aside class="sidebar-right">
+
+
+            <!-- ================================
+                 PROMPT
+            ================================= -->
+
+            <div class="widget-card writing-prompt">
+
+
+                <h3>
+
+                    <ion-icon name="bulb-outline"></ion-icon>
+
+                    Prompt do dia
+
+                </h3>
+
+
+                <p id="promptTexto">
+
+                    Uma personagem encontra uma fotografia
+                    sua num lugar onde nunca esteve.
+
+                </p>
+
+
+                <button
+                    class="btn-outline"
+                    type="button"
+                    id="btnEscrever"
+                >
+
+                    Escrever
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- ================================
+                 DESAFIO
+            ================================= -->
+
+            <div class="widget-card challenge-widget">
+
+
+                <h3>
+
+                    <ion-icon name="trophy-outline"></ion-icon>
+
+                    Desafio da Semana
+
+                </h3>
+
+
+                <p>
+
+                    Escreve uma história com no máximo
+                    100 palavras que comece com:
+
+                    <strong>
+                        "Quando abriu a porta..."
+                    </strong>
+
+                </p>
+
+
+                <button
+                    class="btn-outline"
+                    type="button"
+                    id="btnParticipar"
+                >
+
+                    Participar
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- ================================
+                 TEMAS
+            ================================= -->
+
+            <div class="widget-card writing-tags">
+
+
+                <h3>
+
+                    <ion-icon name="pricetags-outline"></ion-icon>
+
+                    Explorar temas
+
+                </h3>
+
+
+                <div class="tags">
+
+                    <span>#fantasia</span>
+
+                    <span>#mistério</span>
+
+                    <span>#romance</span>
+
+                    <span>#terror</span>
+
+                    <span>#ficção</span>
+
+                    <span>#aventura</span>
+
+                </div>
+
+
+            </div>
+
+
+        </aside>
+
+
+    </div>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- LOGO -->
+
+            <div class="footer-about">
+
+
+                <div class="footer-logo">
+
+                    <ion-icon name="infinite-outline"></ion-icon>
+
+                    <span>Sukishi</span>
+
+                </div>
+
+
+                <p>
+
+                    Um cantinho para pessoas que gostam
+                    de livros, escrita, poesia e histórias.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- EXPLORAR -->
+
+            <div class="footer-column">
+
+
+                <h3>Explorar</h3>
+
+
+                <a href="index.html">
+                    Feed
+                </a>
+
+
+                <a href="biblioteca.html">
+                    Biblioteca
+                </a>
+
+
+                <a href="clubes.html">
+                    Clubes
+                </a>
+
+
+            </div>
+
+
+
+            <!-- COMUNIDADE -->
+
+            <div class="footer-column">
+
+
+                <h3>Comunidade</h3>
+
+
+                <a href="escrita.html">
+                    Escrita Criativa
+                </a>
+
+
+                <a href="recomendacoes.html">
+                    Recomendações
+                </a>
+
+
+                <a href="poesia.html">
+                    Poesia
+                </a>
+
+
+                <a href="lofi.html">
+                    Cantinho Lo-Fi
+                </a>
+
+
+            </div>
+
+
+
+            <!-- SUKISHI -->
+
+            <div class="footer-column">
+
+
+                <h3>Sukishi</h3>
+
+
+                <a href="#">
+                    Sobre nós
+                </a>
+
+
+                <a href="#">
+                    Termos
+                </a>
+
+
+                <a href="#">
+                    Privacidade
+                </a>
+
+
+                <a href="#">
+                    Contactos
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PARTE INFERIOR -->
+
+        <div class="footer-bottom">
+
+
+            <p>
+
+                &copy; 2026 Sukishi.
+                Todos os direitos reservados.
+
+            </p>
+
+
+            <div class="footer-social">
+
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="TikTok"
+                >
+
+                    <ion-icon name="logo-tiktok"></ion-icon>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Discord"
+                >
+
+                    <ion-icon name="logo-discord"></ion-icon>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script>
+
+
+        // ==========================================
+        // ELEMENTOS
+        // ==========================================
+
+        const postText =
+            document.getElementById("postText");
+
+
+        const btnImagem =
+            document.getElementById("btnImagem");
+
+
+        const btnLivro =
+            document.getElementById("btnLivro");
+
+
+        const btnPublicar =
+            document.getElementById("btnPublicar");
+
+
+        const inputImagem =
+            document.getElementById("inputImagem");
+
+
+        const btnEscrever =
+            document.getElementById("btnEscrever");
+
+
+        const btnParticipar =
+            document.getElementById("btnParticipar");
+
+
+        const promptTexto =
+            document.getElementById("promptTexto");
+
+
+        let imagemSelecionada = null;
+
+
+        let livroSelecionado = null;
+
+
+
+        // ==========================================
+        // BOTÃO IMAGEM
+        // ==========================================
+
+        btnImagem.addEventListener(
+            "click",
+            function () {
+
+                inputImagem.click();
+
+            }
+        );
+
+
+        inputImagem.addEventListener(
+            "change",
+            function () {
+
+
+                const ficheiro =
+                    inputImagem.files[0];
+
+
+                if (!ficheiro) {
+
+                    return;
+
+                }
+
+
+                const leitor =
+                    new FileReader();
+
+
+                leitor.onload =
+                    function (evento) {
+
+
+                        imagemSelecionada =
+                            evento.target.result;
+
+
+                        btnImagem.innerHTML = `
+
+                            <ion-icon
+                                name="checkmark-circle-outline">
+                            </ion-icon>
+
+                            Imagem selecionada
+
+                        `;
+
+                    };
+
+
+                leitor.readAsDataURL(ficheiro);
+
+
+            }
+        );
+
+
+
+        // ==========================================
+        // BOTÃO CITAR LIVRO
+        // ==========================================
+
+        btnLivro.addEventListener(
+            "click",
+            function () {
+
+
+                const nomeLivro =
+                    prompt(
+                        "Qual é o nome do livro?"
+                    );
+
+
+                if (
+                    nomeLivro === null ||
+                    nomeLivro.trim() === ""
+                ) {
+
+                    return;
+
+                }
+
+
+                const autorLivro =
+                    prompt(
+                        "Quem é o autor?"
+                    );
+
+
+                if (
+                    autorLivro === null ||
+                    autorLivro.trim() === ""
+                ) {
+
+                    return;
+
+                }
+
+
+                livroSelecionado = {
+
+                    nome:
+                        nomeLivro.trim(),
+
+                    autor:
+                        autorLivro.trim()
+
+                };
+
+
+                btnLivro.innerHTML = `
+
+                    <ion-icon
+                        name="checkmark-circle-outline">
+                    </ion-icon>
+
+                    Livro selecionado
+
+                `;
+
+
+                // Mostrar o livro selecionado
+                // dentro da caixa de escrita
+
+                const mensagemLivro =
+                    `📖 ${livroSelecionado.nome} — ${livroSelecionado.autor}`;
+
+
+                if (postText.value.trim() === "") {
+
+                    postText.value =
+                        mensagemLivro;
+
+                }
+                else {
+
+                    postText.value +=
+                        "\n\n" + mensagemLivro;
+
+                }
+
+
+                postText.focus();
+
+
+            }
+        );
+
+
+
+        // ==========================================
+        // BOTÃO ESCREVER
+        // ==========================================
+
+        btnEscrever.addEventListener(
+            "click",
+            function () {
+
+
+                const prompt =
+                    promptTexto.textContent.trim();
+
+
+                postText.value =
+                    "📝 Prompt do dia:\n\n" +
+                    prompt +
+                    "\n\n";
+
+
+                postText.focus();
+
+
+                // Faz a página descer
+                // até à caixa de publicação
+
+                document
+                    .querySelector(".create-post-card")
+                    .scrollIntoView({
+                        behavior: "smooth",
+                        block: "center"
+                    });
+
+
+            }
+        );
+
+
+
+        // ==========================================
+        // BOTÃO PARTICIPAR
+        // ==========================================
+
+        btnParticipar.addEventListener(
+            "click",
+            function () {
+
+
+                btnParticipar.innerHTML = `
+
+                    Participando ✓
+
+                `;
+
+
+                btnParticipar.disabled =
+                    true;
+
+
+            }
+        );
+
+
+
+        // ==========================================
+        // BOTÃO PUBLICAR
+        // ==========================================
+
+        btnPublicar.addEventListener(
+            "click",
+            function () {
+
+
+                const texto =
+                    postText.value.trim();
+
+
+                // Não permitir publicação vazia
+
+                if (
+                    texto === "" &&
+                    imagemSelecionada === null &&
+                    livroSelecionado === null
+                ) {
+
+
+                    alert(
+                        "Escreve alguma coisa, adiciona uma imagem ou cita um livro antes de publicar."
+                    );
+
+
+                    return;
+
+                }
+
+
+
+                // ==========================================
+                // CRIAR NOVO POST
+                // ==========================================
+
+                const novoPost =
+                    document.createElement("article");
+
+
+                novoPost.className =
+                    "post-card";
+
+
+
+                // ==========================================
+                // CONTEÚDO
+                // ==========================================
+
+                const postContent =
+                    document.createElement("div");
+
+
+                postContent.className =
+                    "post-content";
+
+
+
+                // ==========================================
+                // TEXTO
+                // ==========================================
+
+                if (texto !== "") {
+
+
+                    const textoPost =
+                        document.createElement("p");
+
+
+                    textoPost.className =
+                        "user-post-text";
+
+
+                    textoPost.textContent =
+                        texto;
+
+
+                    textoPost.style.whiteSpace =
+                        "pre-line";
+
+
+                    postContent.appendChild(
+                        textoPost
+                    );
+
+                }
+
+
+
+                // ==========================================
+                // LIVRO
+                // ==========================================
+
+                if (
+                    livroSelecionado !== null
+                ) {
+
+
+                    const livro =
+                        document.createElement("div");
+
+
+                    livro.className =
+                        "quoted-book";
+
+
+                    const icone =
+                        document.createElement(
+                            "ion-icon"
+                        );
+
+
+                    icone.setAttribute(
+                        "name",
+                        "book-outline"
+                    );
+
+
+                    const informacao =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    const nome =
+                        document.createElement(
+                            "strong"
+                        );
+
+
+                    nome.textContent =
+                        livroSelecionado.nome;
+
+
+                    const autor =
+                        document.createElement(
+                            "span"
+                        );
+
+
+                    autor.textContent =
+                        livroSelecionado.autor;
+
+
+                    informacao.appendChild(
+                        nome
+                    );
+
+
+                    informacao.appendChild(
+                        autor
+                    );
+
+
+                    livro.appendChild(
+                        icone
+                    );
+
+
+                    livro.appendChild(
+                        informacao
+                    );
+
+
+                    postContent.appendChild(
+                        livro
+                    );
+
+                }
+
+
+
+                // ==========================================
+                // IMAGEM
+                // ==========================================
+
+                if (
+                    imagemSelecionada !== null
+                ) {
+
+
+                    const imagem =
+                        document.createElement(
+                            "img"
+                        );
+
+
+                    imagem.src =
+                        imagemSelecionada;
+
+
+                    imagem.alt =
+                        "Imagem da publicação";
+
+
+                    imagem.className =
+                        "post-image";
+
+
+                    postContent.appendChild(
+                        imagem
+                    );
+
+                }
+
+
+
+                // ==========================================
+                // AUTOR
+                // ==========================================
+
+                const autorPost =
+                    document.createElement("div");
+
+
+                autorPost.className =
+                    "post-author";
+
+
+                autorPost.innerHTML = `
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                        alt="Avatar"
+                    >
+
+                    <div>
+
+                        <h4>
+                            Sukishi User
+                        </h4>
+
+                        <span class="post-time">
+                            Agora • Escrita Criativa
+                        </span>
+
+                    </div>
+
+                `;
+
+
+
+                // ==========================================
+                // FOOTER DO NOVO POST
+                // ==========================================
+
+                const footerPost =
+                    document.createElement("div");
+
+
+                footerPost.className =
+                    "post-footer";
+
+
+                footerPost.innerHTML = `
+
+                    <button type="button">
+
+                        <ion-icon
+                            name="heart-outline">
+                        </ion-icon>
+
+                        0 Gostos
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon
+                            name="chatbubble-outline">
+                        </ion-icon>
+
+                        0 Comentários
+
+                    </button>
+
+
+                    <button type="button">
+
+                        <ion-icon
+                            name="share-social-outline">
+                        </ion-icon>
+
+                        Partilhar
+
+                    </button>
+
+                `;
+
+
+
+                // ==========================================
+                // MONTAR POST
+                // ==========================================
+
+                novoPost.appendChild(
+                    autorPost
+                );
+
+
+                novoPost.appendChild(
+                    postContent
+                );
+
+
+                novoPost.appendChild(
+                    footerPost
+                );
+
+
+
+                // ==========================================
+                // COLOCAR NO INÍCIO DO FEED
+                // ==========================================
+
+                const caixaCriar =
+                    document.querySelector(
+                        ".create-post-card"
+                    );
+
+
+                caixaCriar.after(
+                    novoPost
+                );
+
+
+
+                // ==========================================
+                // LIMPAR
+                // ==========================================
+
+                postText.value =
+                    "";
+
+
+                imagemSelecionada =
+                    null;
+
+
+                livroSelecionado =
+                    null;
+
+
+                inputImagem.value =
+                    "";
+
+
+                btnImagem.innerHTML = `
+
+                    <ion-icon
+                        name="image-outline">
+                    </ion-icon>
+
+                    Imagem
+
+                `;
+
+
+                btnLivro.innerHTML = `
+
+                    <ion-icon
+                        name="book-outline">
+                    </ion-icon>
+
+                    Citar Livro
+
+                `;
+
+
+                // Voltar ao topo do novo post
+
+                novoPost.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
+                });
+
+
+            }
+        );
+
+    </script>
+
+
+</body>
+</html>

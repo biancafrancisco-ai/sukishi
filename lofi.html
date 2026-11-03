@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sukishi — Cantinho Lo-Fi</title>
+
+    <script type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="lofi.css">
+    <link rel="stylesheet" href=" lofi.js"
+</head>
+
+<body>
+
+<!-- ================================
+     NAVBAR
+================================ -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <div class="logo">
+            <ion-icon name="infinite-outline"></ion-icon>
+            <span>Sukishi</span>
+        </div>
+
+        <div class="search-bar">
+            <ion-icon name="search-outline"></ion-icon>
+
+            <input
+                type="text"
+                placeholder="Pesquisar histórias, livros ou membros..."
+            >
+        </div>
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                <ion-icon name="home-outline"></ion-icon>
+                Feed
+            </a>
+
+            <a href="biblioteca.html">
+                <ion-icon name="book-outline"></ion-icon>
+                Biblioteca
+            </a>
+
+            <a href="clubes.html">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+                Clubes
+            </a>
+
+        </nav>
+
+        <div class="user-profile">
+
+            <img
+                src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                alt="Avatar"
+            >
+
+            <span>A minha conta</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================================
+     LAYOUT
+================================ -->
+
+<main class="community-container">
+
+
+    <!-- ================================
+         SIDEBAR ESQUERDA
+    ================================= -->
+
+    <aside class="sidebar-left">
+
+        <div class="menu-box">
+
+            <h3>Explorar</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <ion-icon name="sparkles-outline"></ion-icon>
+                        Tudo
+                    </a>
+                </li>
+
+                <li>
+                    <a href="escrita.html">
+                        <ion-icon name="create-outline"></ion-icon>
+                        Escrita Criativa
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recomendacoes.html">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        Recomendações
+                    </a>
+                </li>
+
+                <li>
+                    <a href="poesia.html">
+                        <ion-icon name="heart-outline"></ion-icon>
+                        Poesia
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="lofi.html">
+                        <ion-icon name="cafe-outline"></ion-icon>
+                        Cantinho Lo-Fi
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================================
+         FEED CENTRAL
+    ================================= -->
+
+    <section class="main-feed">
+
+
+        <!-- CABEÇALHO -->
+
+        <div class="category-header lofi-header">
+
+            <div class="category-icon">
+                <ion-icon name="cafe-outline"></ion-icon>
+            </div>
+
+            <div>
+
+                <span>COMUNIDADE</span>
+
+                <h1>Cantinho Lo-Fi</h1>
+
+                <p>
+                    Um cantinho tranquilo para música,
+                    estudos, noites calmas e pequenas conversas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================
+             CRIAR PUBLICAÇÃO
+        ================================= -->
+
+        <div class="create-post-card">
+
+            <div class="post-tools">
+    <button class="btn-outline" id="btnMusica">
+        <ion-icon name="musical-notes-outline"></ion-icon>
+        Música
+    </button>
+
+    <button class="btn-outline" id="btnImagem">
+        <ion-icon name="image-outline"></ion-icon>
+        Imagem
+    </button>
+
+    <input type="file" id="inputImagem" accept="image/*" hidden>
+
+    <button class="btn-publish" id="btnPublicar">
+        Publicar
+    </button>
+</div>
+
+            <div class="post-header">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                    alt="Avatar"
+                >
+
+                <textarea
+                    id="lofiPostText"
+                    placeholder="O que estás a ouvir neste momento?"
+                ></textarea>
+
+            </div>
+
+            <div class="post-actions">
+
+                <div class="post-options">
+
+                    <button type="button" id="btnMusica">
+
+                        <ion-icon name="musical-notes-outline"></ion-icon>
+
+                        Música
+
+                    </button>
+
+
+                    <button type="button" id="btnImagem">
+
+                        <ion-icon name="image-outline"></ion-icon>
+
+                        Imagem
+
+                    </button>
+
+                    <input
+                        type="file"
+                        id="inputImagem"
+                        accept="image/*"
+                        hidden
+                    >
+
+                </div>
+
+
+                <button
+                    class="btn-publish"
+                    type="button"
+                    id="btnPublicar"
+                >
+                    Publicar
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================
+             POST 1
+        ================================= -->
+
+        <article
+            class="post-card lofi-post"
+            data-moods="noite estudo madrugada"
+        >
+
+            <div class="post-author">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Clara&background=8d6e9e&color=fff"
+                    alt="Clara"
+                >
+
+                <div>
+
+                    <h4>Clara</h4>
+
+                    <span class="post-time">
+                        há 24 minutos · Cantinho Lo-Fi
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="post-content">
+
+                <span class="lofi-tag">
+                    🎧 A ouvir
+                </span>
+
+                <h3>
+                    Playlist perfeita para estudar à noite 🌙
+                </h3>
+
+                <p>
+                    Hoje está aquele tempo perfeito para ficar no
+                    quarto, estudar um bocadinho e ouvir música.
+                    Alguém tem playlists lo-fi para recomendar?
+                </p>
+
+
+                <div class="music-card">
+
+                    <div class="music-icon">
+                        <ion-icon name="musical-notes-outline"></ion-icon>
+                    </div>
+
+                    <div class="music-info">
+
+                        <strong>Late Night Lo-Fi</strong>
+
+                        <span>Sukishi Radio</span>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="music-play"
+                    >
+                        <ion-icon name="play"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+
+                    <ion-icon name="heart-outline"></ion-icon>
+
+                    <span>24</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn-comment"
+                >
+
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+
+                    <span>8</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn-share"
+                >
+
+                    <ion-icon name="share-social-outline"></ion-icon>
+
+                    Partilhar
+
+                </button>
+
+            </div>
+
+
+            <div class="comments-section">
+
+                <div class="comment-list"></div>
+
+                <div class="comment-form">
+
+                    <input
+                        type="text"
+                        class="comment-input"
+                        placeholder="Escreve um comentário..."
+                    >
+
+                    <button
+                        type="button"
+                        class="btn-send-comment"
+                    >
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ================================
+             POST 2
+        ================================= -->
+
+        <article
+            class="post-card lofi-post"
+            data-moods="cozy relax estudo"
+        >
+
+            <div class="post-author">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Noah&background=70558c&color=fff"
+                    alt="Noah"
+                >
+
+                <div>
+
+                    <h4>Noah</h4>
+
+                    <span class="post-time">
+                        há 1 hora · Cantinho Lo-Fi
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="post-content">
+
+                <span class="lofi-tag">
+                    ☕ Momento cozy
+                </span>
+
+                <h3>
+                    Pequenas coisas que tornam uma noite melhor
+                </h3>
+
+                <p>
+                    Chá quente, luzes baixas, uma manta, música baixinha
+                    e finalmente acabar aquele capítulo que estava
+                    parado há semanas.
+                </p>
+
+
+                <div class="cozy-list">
+
+                    <div>
+                        <ion-icon name="cafe-outline"></ion-icon>
+                        Chá quente
+                    </div>
+
+                    <div>
+                        <ion-icon name="musical-notes-outline"></ion-icon>
+                        Música calma
+                    </div>
+
+                    <div>
+                        <ion-icon name="book-outline"></ion-icon>
+                        Um bom livro
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+
+                    <ion-icon name="heart-outline"></ion-icon>
+
+                    <span>31</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn-comment"
+                >
+
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+
+                    <span>5</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn-share"
+                >
+
+                    <ion-icon name="share-social-outline"></ion-icon>
+
+                    Partilhar
+
+                </button>
+
+            </div>
+
+
+            <div class="comments-section">
+
+                <div class="comment-list"></div>
+
+                <div class="comment-form">
+
+                    <input
+                        type="text"
+                        class="comment-input"
+                        placeholder="Escreve um comentário..."
+                    >
+
+                    <button
+                        type="button"
+                        class="btn-send-comment"
+                    >
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- ================================
+             POST 3
+        ================================= -->
+
+        <article
+            class="post-card lofi-post"
+            data-moods="chuva cozy noite"
+        >
+
+            <div class="post-author">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Mia&background=9b7bb0&color=fff"
+                    alt="Mia"
+                >
+
+                <div>
+
+                    <h4>Mia</h4>
+
+                    <span class="post-time">
+                        há 3 horas · Cantinho Lo-Fi
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="post-content">
+
+                <span class="lofi-tag">
+                    🌧️ Mood
+                </span>
+
+                <h3>
+                    Qual é a vossa música para dias de chuva?
+                </h3>
+
+                <p>
+                    Quero descobrir músicas novas para criar uma
+                    playlist só para aqueles dias cinzentos em que
+                    só apetece ficar no quarto.
+                </p>
+
+
+                <div class="mood-tags">
+
+                    <span>#rainyday</span>
+                    <span>#lofi</span>
+                    <span>#cozy</span>
+                    <span>#night</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="post-footer">
+
+                <button type="button" class="btn-like">
+
+                    <ion-icon name="heart-outline"></ion-icon>
+
+                    <span>18</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn-comment"
+                >
+
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+
+                    <span>12</span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="btn-share"
+                >
+
+                    <ion-icon name="share-social-outline"></ion-icon>
+
+                    Partilhar
+
+                </button>
+
+            </div>
+
+
+            <div class="comments-section">
+
+                <div class="comment-list"></div>
+
+                <div class="comment-form">
+
+                    <input
+                        type="text"
+                        class="comment-input"
+                        placeholder="Escreve um comentário..."
+                    >
+
+                    <button
+                        type="button"
+                        class="btn-send-comment"
+                    >
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- MENSAGEM DOS MOODS -->
+
+        <div
+            id="noMoodResults"
+            class="no-results"
+        >
+
+            <ion-icon name="cloud-outline"></ion-icon>
+
+            Não existem publicações neste mood ainda.
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         SIDEBAR DIREITA
+    ================================= -->
+
+    <aside class="sidebar-right">
+
+
+        <!-- PLAYER -->
+
+        <div class="widget-card lofi-player">
+
+            <h3>
+
+                <ion-icon name="radio-outline"></ion-icon>
+
+                Lo-Fi Radio
+
+            </h3>
+
+
+            <div class="player-cover">
+
+                <ion-icon name="musical-notes-outline"></ion-icon>
+
+            </div>
+
+
+            <div class="player-info">
+
+                <strong>Midnight Study</strong>
+
+                <span>Sukishi Lo-Fi</span>
+
+            </div>
+
+
+            <div class="player-progress">
+
+                <div id="playerProgress"></div>
+
+            </div>
+
+
+            <div class="player-time">
+
+                <span>01:24</span>
+
+                <span>03:42</span>
+
+            </div>
+
+
+            <div class="player-controls">
+
+                <button
+                    type="button"
+                    id="previousSong"
+                >
+                    <ion-icon name="play-skip-back"></ion-icon>
+                </button>
+
+
+                <button
+                    class="play-button"
+                    type="button"
+                    id="mainPlayButton"
+                >
+                    <ion-icon name="play"></ion-icon>
+                </button>
+
+
+                <button
+                    type="button"
+                    id="nextSong"
+                >
+                    <ion-icon name="play-skip-forward"></ion-icon>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESAFIO -->
+
+        <div class="widget-card">
+
+            <h3>
+
+                <ion-icon name="moon-outline"></ion-icon>
+
+                Desafio da Semana
+
+            </h3>
+
+            <p>
+                Cria uma playlist para uma personagem fictícia.
+            </p>
+
+            <button
+                class="btn-outline"
+                type="button"
+                id="btnParticipar"
+            >
+                Participar
+            </button>
+
+        </div>
+
+
+        <!-- MOODS -->
+
+        <div class="widget-card">
+
+            <h3>
+
+                <ion-icon name="sparkles-outline"></ion-icon>
+
+                Explorar moods
+
+            </h3>
+
+
+            <div class="lofi-moods">
+
+                <button
+                    type="button"
+                    class="mood-filter active"
+                    data-mood="todos"
+                >
+                    ✨ Todos
+                </button>
+
+                <button
+                    type="button"
+                    class="mood-filter"
+                    data-mood="noite"
+                >
+                    🌙 Noite
+                </button>
+
+                <button
+                    type="button"
+                    class="mood-filter"
+                    data-mood="chuva"
+                >
+                    🌧️ Chuva
+                </button>
+
+                <button
+                    type="button"
+                    class="mood-filter"
+                    data-mood="cozy"
+                >
+                    ☕ Cozy
+                </button>
+
+                <button
+                    type="button"
+                    class="mood-filter"
+                    data-mood="estudo"
+                >
+                    📚 Estudo
+                </button>
+
+                <button
+                    type="button"
+                    class="mood-filter"
+                    data-mood="madrugada"
+                >
+                    🌌 Madrugada
+                </button>
+
+                <button
+                    type="button"
+                    class="mood-filter"
+                    data-mood="relax"
+                >
+                    🕯️ Relax
+                </button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+</main>
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <div class="footer-logo">
+
+                <ion-icon name="infinite-outline"></ion-icon>
+
+                <span>Sukishi</span>
+
+            </div>
+
+            <p>
+                Um cantinho para pessoas que gostam
+                de livros, escrita, poesia e histórias.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Explorar</h3>
+
+            <a href="index.html">Feed</a>
+            <a href="biblioteca.html">Biblioteca</a>
+            <a href="clubes.html">Clubes</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Comunidade</h3>
+
+            <a href="escrita.html">Escrita Criativa</a>
+            <a href="recomendacoes.html">Recomendações</a>
+            <a href="poesia.html">Poesia</a>
+            <a href="lofi.html">Cantinho Lo-Fi</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Sukishi</h3>
+
+            <a href="#">Sobre nós</a>
+            <a href="#">Termos</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Contactos</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Sukishi. Todos os direitos reservados.
+        </p>
+
+
+        <div class="footer-social">
+
+            <a href="#" aria-label="Instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+
+            <a href="#" aria-label="Discord">
+                <ion-icon name="logo-discord"></ion-icon>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================================
+     JAVASCRIPT
+================================ -->
+
+<script>
+
+/* =================================
+   ELEMENTOS
+================================= */
+
+const lofiPostText = document.getElementById("lofiPostText");
+
+const btnMusica = document.getElementById("btnMusica");
+
+const btnImagem = document.getElementById("btnImagem");
+
+const inputImagem = document.getElementById("inputImagem");
+
+const btnPublicar = document.getElementById("btnPublicar");
+
+const btnParticipar = document.getElementById("btnParticipar");
+
+const mainPlayButton = document.getElementById("mainPlayButton");
+
+const playerProgress = document.getElementById("playerProgress");
+
+const moodButtons = document.querySelectorAll(".mood-filter");
+
+const noMoodResults = document.getElementById("noMoodResults");
+
+let musicaSelecionada = null;
+
+let imagemSelecionada = null;
+
+
+/* =================================
+   MÚSICA
+================================= */
+
+btnMusica.addEventListener("click", () => {
+
+    const titulo = prompt("Qual é o nome da música ou playlist?");
+
+    if (!titulo || !titulo.trim()) {
+        return;
+    }
+
+    const artista = prompt("Quem é o artista ou criador?");
+
+    if (!artista || !artista.trim()) {
+        return;
+    }
+
+    musicaSelecionada = {
+        titulo: titulo.trim(),
+        artista: artista.trim()
+    };
+
+    btnMusica.innerHTML = `
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        Música selecionada
+    `;
+
+    lofiPostText.focus();
+
+});
+
+
+/* =================================
+   IMAGEM
+================================= */
+
+btnImagem.addEventListener("click", () => {
+
+    inputImagem.click();
+
+});
+
+
+inputImagem.addEventListener("change", function () {
+
+    const ficheiro = this.files[0];
+
+    if (!ficheiro) {
+        return;
+    }
+
+    const leitor = new FileReader();
+
+    leitor.onload = function (event) {
+
+        imagemSelecionada = event.target.result;
+
+        btnImagem.innerHTML = `
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            Imagem selecionada
+        `;
+
+    };
+
+    leitor.readAsDataURL(ficheiro);
+
+});
+
+
+/* =================================
+   PUBLICAR
+================================= */
+
+btnPublicar.addEventListener("click", () => {
+
+    const texto = lofiPostText.value.trim();
+
+    if (
+        !texto &&
+        !musicaSelecionada &&
+        !imagemSelecionada
+    ) {
+
+        alert(
+            "Escreve alguma coisa, escolhe uma música ou adiciona uma imagem."
+        );
+
+        return;
+
+    }
+
+
+    const novoPost = document.createElement("article");
+
+    novoPost.className = "post-card lofi-post";
+
+    /*
+       Por defeito, uma nova publicação
+       fica em TODOS os moods.
+    */
+
+    novoPost.dataset.moods = "cozy noite";
+
+
+    let musicaHTML = "";
+
+    if (musicaSelecionada) {
+
+        musicaHTML = `
+
+            <div class="music-card">
+
+                <div class="music-icon">
+
+                    <ion-icon
+                        name="musical-notes-outline">
+                    </ion-icon>
+
+                </div>
+
+                <div class="music-info">
+
+                    <strong>
+                        ${escaparHTML(musicaSelecionada.titulo)}
+                    </strong>
+
+                    <span>
+                        ${escaparHTML(musicaSelecionada.artista)}
+                    </span>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="music-play"
+                >
+
+                    <ion-icon name="play"></ion-icon>
+
+                </button>
+
+            </div>
+
+        `;
+
+    }
+
+
+    let imagemHTML = "";
+
+    if (imagemSelecionada) {
+
+        imagemHTML = `
+
+            <img
+                src="${imagemSelecionada}"
+                class="post-image"
+                alt="Imagem da publicação"
+            >
+
+        `;
+
+    }
+
+
+    let textoHTML = "";
+
+    if (texto) {
+
+        textoHTML = `
+
+            <p style="white-space: pre-line">
+                ${escaparHTML(texto)}
+            </p>
+
+        `;
+
+    }
+
+
+    novoPost.innerHTML = `
+
+        <div class="post-author">
+
+            <img
+                src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                alt="Avatar"
+            >
+
+            <div>
+
+                <h4>Sukishi User</h4>
+
+                <span class="post-time">
+                    Agora · Cantinho Lo-Fi
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="post-content">
+
+            <span class="lofi-tag">
+                🎧 A ouvir
+            </span>
+
+            ${textoHTML}
+
+            ${musicaHTML}
+
+            ${imagemHTML}
+
+        </div>
+
+
+        <div class="post-footer">
+
+            <button
+                type="button"
+                class="btn-like"
+            >
+
+                <ion-icon name="heart-outline"></ion-icon>
+
+                <span>0</span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="btn-comment"
+            >
+
+                <ion-icon name="chatbubble-outline"></ion-icon>
+
+                <span>0</span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="btn-share"
+            >
+
+                <ion-icon name="share-social-outline"></ion-icon>
+
+                Partilhar
+
+            </button>
+
+        </div>
+
+
+        <div class="comments-section">
+
+            <div class="comment-list"></div>
+
+            <div class="comment-form">
+
+                <input
+                    type="text"
+                    class="comment-input"
+                    placeholder="Escreve um comentário..."
+                >
+
+                <button
+                    type="button"
+                    class="btn-send-comment"
+                >
+
+                    <ion-icon name="send-outline"></ion-icon>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    document
+        .querySelector(".main-feed")
+        .insertBefore(
+            novoPost,
+            noMoodResults
+        );
+
+
+    /* Ativar funcionalidades */
+
+    ativarGostos(novoPost);
+
+    ativarComentarios(novoPost);
+
+    ativarPartilha(novoPost);
+
+    ativarPlayerMusica(novoPost);
+
+
+    /* Limpar */
+
+    lofiPostText.value = "";
+
+    inputImagem.value = "";
+
+    musicaSelecionada = null;
+
+    imagemSelecionada = null;
+
+
+    btnMusica.innerHTML = `
+        <ion-icon name="musical-notes-outline"></ion-icon>
+        Música
+    `;
+
+
+    btnImagem.innerHTML = `
+        <ion-icon name="image-outline"></ion-icon>
+        Imagem
+    `;
+
+
+    novoPost.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+});
+
+
+/* =================================
+   ESCAPAR HTML
+================================= */
+
+function escaparHTML(texto) {
+
+    const div = document.createElement("div");
+
+    div.textContent = texto;
+
+    return div.innerHTML;
+
+}
+
+
+/* =================================
+   GOSTOS
+================================= */
+
+function ativarGostos(post) {
+
+    const botao = post.querySelector(".btn-like");
+
+    if (!botao) {
+        return;
+    }
+
+
+    botao.addEventListener("click", () => {
+
+        const numero = botao.querySelector("span");
+
+        let gostos = Number(numero.textContent);
+
+
+        if (botao.classList.contains("liked")) {
+
+            gostos--;
+
+            botao.classList.remove("liked");
+
+            botao
+                .querySelector("ion-icon")
+                .setAttribute(
+                    "name",
+                    "heart-outline"
+                );
+
+        } else {
+
+            gostos++;
+
+            botao.classList.add("liked");
+
+            botao
+                .querySelector("ion-icon")
+                .setAttribute(
+                    "name",
+                    "heart"
+                );
+
+        }
+
+
+        numero.textContent = gostos;
+
+    });
+
+}
+
+
+/* Ativar gostos dos posts existentes */
+
+document
+    .querySelectorAll(".lofi-post")
+    .forEach(ativarGostos);
+
+
+/* =================================
+   COMENTÁRIOS
+================================= */
+
+function ativarComentarios(post) {
+
+    const botao = post.querySelector(".btn-comment");
+
+    const secao = post.querySelector(".comments-section");
+
+    const input = post.querySelector(".comment-input");
+
+    const enviar = post.querySelector(".btn-send-comment");
+
+    const lista = post.querySelector(".comment-list");
+
+    if (
+        !botao ||
+        !secao ||
+        !input ||
+        !enviar ||
+        !lista
+    ) {
+        return;
+    }
+
+
+    botao.addEventListener("click", () => {
+
+        secao.classList.toggle("active");
+
+        if (secao.classList.contains("active")) {
+            input.focus();
+        }
+
+    });
+
+
+    function adicionarComentario() {
+
+        const texto = input.value.trim();
+
+        if (!texto) {
+            return;
+        }
+
+
+        const comentario = document.createElement("div");
+
+        comentario.className = "comment";
+
+        comentario.innerHTML = `
+
+            <strong>Sukishi User</strong>
+
+            <p>${escaparHTML(texto)}</p>
+
+        `;
+
+        lista.appendChild(comentario);
+
+
+        const numero = botao.querySelector("span");
+
+        numero.textContent =
+            Number(numero.textContent) + 1;
+
+
+        input.value = "";
+
+    }
+
+
+    enviar.addEventListener(
+        "click",
+        adicionarComentario
+    );
+
+
+    input.addEventListener(
+        "keydown",
+        event => {
+
+            if (event.key === "Enter") {
+
+                event.preventDefault();
+
+                adicionarComentario();
+
+            }
+
+        }
+    );
+
+}
+
+
+/* Ativar comentários existentes */
+
+document
+    .querySelectorAll(".lofi-post")
+    .forEach(ativarComentarios);
+
+
+/* =================================
+   PARTILHAR
+================================= */
+
+function ativarPartilha(post) {
+
+    const botao = post.querySelector(".btn-share");
+
+    if (!botao) {
+        return;
+    }
+
+
+    botao.addEventListener("click", async () => {
+
+        try {
+
+            await navigator.clipboard.writeText(
+                window.location.href
+            );
+
+            const textoOriginal = botao.innerHTML;
+
+            botao.innerHTML = `
+                <ion-icon name="checkmark-outline"></ion-icon>
+                Copiado!
+            `;
+
+
+            setTimeout(() => {
+
+                botao.innerHTML = textoOriginal;
+
+            }, 1500);
+
+
+        } catch {
+
+            alert(
+                "Não foi possível copiar o link."
+            );
+
+        }
+
+    });
+
+}
+
+
+/* Ativar partilha */
+
+document
+    .querySelectorAll(".lofi-post")
+    .forEach(ativarPartilha);
+
+
+/* =================================
+   PLAYER PRINCIPAL
+================================= */
+
+let playerLigado = false;
+
+mainPlayButton.addEventListener("click", () => {
+
+    playerLigado = !playerLigado;
+
+
+    const icone =
+        mainPlayButton.querySelector("ion-icon");
+
+
+    if (playerLigado) {
+
+        icone.setAttribute(
+            "name",
+            "pause"
+        );
+
+        iniciarBarraPlayer();
+
+    } else {
+
+        icone.setAttribute(
+            "name",
+            "play"
+        );
+
+    }
+
+});
+
+
+function iniciarBarraPlayer() {
+
+    if (!playerLigado) {
+        return;
+    }
+
+
+    playerProgress.style.width = "0%";
+
+
+    let progresso = 0;
+
+
+    const intervalo = setInterval(() => {
+
+        if (!playerLigado) {
+
+            clearInterval(intervalo);
+
+            return;
+
+        }
+
+
+        progresso += 1;
+
+
+        playerProgress.style.width =
+            progresso + "%";
+
+
+        if (progresso >= 100) {
+
+            progresso = 0;
+
+        }
+
+    }, 100);
+
+}
+
+
+/* =================================
+   PLAY DOS CARTÕES DE MÚSICA
+================================= */
+
+function ativarPlayerMusica(post) {
+
+    const botao =
+        post.querySelector(".music-play");
+
+    if (!botao) {
+        return;
+    }
+
+
+    botao.addEventListener("click", () => {
+
+        const icone =
+            botao.querySelector("ion-icon");
+
+
+        if (
+            icone.getAttribute("name") === "play"
+        ) {
+
+            icone.setAttribute(
+                "name",
+                "pause"
+            );
+
+        } else {
+
+            icone.setAttribute(
+                "name",
+                "play"
+            );
+
+        }
+
+    });
+
+}
+
+
+document
+    .querySelectorAll(".lofi-post")
+    .forEach(ativarPlayerMusica);
+
+
+/* =================================
+   DESAFIO
+================================= */
+
+btnParticipar.addEventListener("click", () => {
+
+    if (
+        btnParticipar.textContent
+            .trim()
+            .includes("Participando")
+    ) {
+
+        return;
+
+    }
+
+
+    btnParticipar.innerHTML = `
+        Participando ✓
+    `;
+
+    btnParticipar.disabled = true;
+
+    alert(
+        "🌙 Participaste no Desafio da Semana!"
+    );
+
+});
+
+
+/* =================================
+   EXPLORAR MOODS
+================================= */
+
+function filtrarMood(mood) {
+
+    const posts =
+        document.querySelectorAll(".lofi-post");
+
+
+    let encontrados = 0;
+
+
+    posts.forEach(post => {
+
+        const moods =
+            (post.dataset.moods || "")
+                .toLowerCase()
+                .split(" ");
+
+
+        if (
+            mood === "todos" ||
+            moods.includes(mood)
+        ) {
+
+            post.style.display = "";
+
+            encontrados++;
+
+        } else {
+
+            post.style.display = "none";
+
+        }
+
+    });
+
+
+    if (noMoodResults) {
+
+        noMoodResults.style.display =
+            encontrados === 0
+                ? "block"
+                : "none";
+
+    }
+
+}
+
+
+moodButtons.forEach(botao => {
+
+    botao.addEventListener("click", () => {
+
+        const mood =
+            botao.dataset.mood;
+
+
+        moodButtons.forEach(b => {
+
+            b.classList.remove("active");
+
+        });
+
+
+        botao.classList.add("active");
+
+
+        filtrarMood(mood);
+
+    });
+
+});
+
+
+/* =================================
+INICIALIZAR
+================================= */
+
+filtrarMood("todos");
+
+</script>
+<audio id="lofiAudio"></audio> 
+
+</body>
+</html>

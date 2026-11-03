@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sukishi — Comunidade</title>
+
+    <!-- Ícones -->
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="community.css">
+</head>
+
+<body>
+
+
+    <!-- ================================
+         NAVEGAÇÃO
+    ================================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <div class="logo">
+
+                <ion-icon name="infinite-outline"></ion-icon>
+
+                <span>Sukishi</span>
+
+            </div>
+
+
+            <div class="search-bar">
+
+                <ion-icon name="search-outline"></ion-icon>
+
+                <input
+                    type="text"
+                    placeholder="Pesquisar histórias, livros ou membros..."
+                >
+
+            </div>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html" class="active">
+
+                    <ion-icon name="home-outline"></ion-icon>
+
+                    Feed
+
+                </a>
+
+
+                <a href="biblioteca.html">
+
+                    <ion-icon name="book-outline"></ion-icon>
+
+                    Biblioteca
+
+                </a>
+
+
+                <a href="clubes.html">
+
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+
+                    Clubes
+
+                </a>
+
+            </nav>
+
+
+            <div class="user-profile">
+
+                <img
+                    src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                    alt="Avatar"
+                >
+
+                <span>A minha conta</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================================
+         CONTEÚDO
+    ================================= -->
+
+    <div class="community-container">
+
+
+        <!-- ================================
+             MENU ESQUERDO
+        ================================= -->
+
+        <aside class="sidebar-left">
+
+            <div class="menu-box">
+
+                <h3>Categorias</h3>
+
+                <ul>
+
+                    <li class="active">
+
+                        <a href="index.html">
+
+                            <ion-icon name="sparkles-outline"></ion-icon>
+
+                            Tudo
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="escrita.html">
+
+                            <ion-icon name="create-outline"></ion-icon>
+
+                            Escrita Criativa
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="recomendacoes.html">
+
+                            <ion-icon name="bookmark-outline"></ion-icon>
+
+                            Recomendações
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="poesia.html">
+
+                            <ion-icon name="heart-outline"></ion-icon>
+
+                            Poesia
+
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="lofi.html">
+
+                            <ion-icon name="cafe-outline"></ion-icon>
+
+                            Cantinho Lo-Fi
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- ================================
+             FEED
+        ================================= -->
+
+        <main class="feed">
+
+
+            <!-- ================================
+                 CRIAR PUBLICAÇÃO
+            ================================= -->
+
+            <div class="create-post-card">
+
+                <div class="post-header">
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Sukishi+User&background=6a2c70&color=fff"
+                        alt="Avatar"
+                    >
+
+
+                    <textarea
+                        placeholder="Partilha uma reflexão, recomendação de livro ou um poema..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="post-actions">
+
+                    <div class="post-options">
+
+                        <button type="button">
+
+                            <ion-icon name="image-outline"></ion-icon>
+
+                            Imagem
+
+                        </button>
+
+
+                        <button type="button">
+
+                            <ion-icon name="book-outline"></ion-icon>
+
+                            Citar Livro
+
+                        </button>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="btn-publish"
+                    >
+
+                        Publicar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================================
+                 PUBLICAÇÃO 1
+            ================================= -->
+
+            <article class="post-card">
+
+
+                <!-- AUTOR -->
+
+                <div class="post-author">
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Ines+M&background=8c5885&color=fff"
+                        alt="Avatar de Inês Maria"
+                    >
+
+
+                    <div>
+
+                        <h4>Inês Maria</h4>
+
+                        <span class="post-time">
+
+                            Há 2 horas • Recomendações
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONTEÚDO -->
+
+                <div class="post-content">
+
+                    <p>
+
+                        Acabei de ler
+                        <em>"A Teoria de Tudo"</em>
+                        enquanto ouvia a playlist Lo-Fi da comunidade.
+
+                        Que livro incrível! Alguém mais já leu
+                        para trocarmos opiniões? 📖✨
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- AÇÕES -->
+
+                <div class="post-footer">
+
+
+                    <button
+                        type="button"
+                        class="btn-like"
+                    >
+
+                        <ion-icon name="heart-outline"></ion-icon>
+
+                        <span class="like-count">24</span>
+
+                        Gostos
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="btn-comment"
+                    >
+
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <span class="comment-count">8</span>
+
+                        Comentários
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="btn-share"
+                    >
+
+                        <ion-icon name="share-social-outline"></ion-icon>
+
+                        Partilhar
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- COMENTÁRIOS -->
+
+                <div class="comments-section">
+
+                    <div class="comment-list"></div>
+
+
+                    <div class="comment-form">
+
+                        <input
+                            type="text"
+                            class="comment-input"
+                            placeholder="Escreve um comentário..."
+                        >
+
+
+                        <button
+                            type="button"
+                            class="btn-send-comment"
+                        >
+
+                            <ion-icon name="send-outline"></ion-icon>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================================
+                 PUBLICAÇÃO 2
+            ================================= -->
+
+            <article class="post-card">
+
+
+                <!-- AUTOR -->
+
+                <div class="post-author">
+
+                    <img
+                        src="https://ui-avatars.com/api/?name=Lucas+R&background=3a2a4f&color=fff"
+                        alt="Avatar de Lucas Rocha"
+                    >
+
+
+                    <div>
+
+                        <h4>Lucas Rocha</h4>
+
+                        <span class="post-time">
+
+                            Há 5 horas • Poesia
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONTEÚDO -->
+
+                <div class="post-content">
+
+                    <p>
+
+                        <em>
+
+                            "Na janela da noite,<br>
+                            o tempo passa devagar,<br>
+                            palavras dançam no papel,<br>
+                            sem ter pressa de chegar."
+
+                        </em>
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- AÇÕES -->
+
+                <div class="post-footer">
+
+
+                    <button
+                        type="button"
+                        class="btn-like"
+                    >
+
+                        <ion-icon name="heart-outline"></ion-icon>
+
+                        <span class="like-count">42</span>
+
+                        Gostos
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="btn-comment"
+                    >
+
+                        <ion-icon name="chatbubble-outline"></ion-icon>
+
+                        <span class="comment-count">12</span>
+
+                        Comentários
+
+                    </button>
+
+
+
+                    <button
+                        type="button"
+                        class="btn-share"
+                    >
+
+                        <ion-icon name="share-social-outline"></ion-icon>
+
+                        Partilhar
+
+                    </button>
+
+                </div>
+
+
+
+                <!-- COMENTÁRIOS -->
+
+                <div class="comments-section">
+
+                    <div class="comment-list"></div>
+
+
+                    <div class="comment-form">
+
+                        <input
+                            type="text"
+                            class="comment-input"
+                            placeholder="Escreve um comentário..."
+                        >
+
+
+                        <button
+                            type="button"
+                            class="btn-send-comment"
+                        >
+
+                            <ion-icon name="send-outline"></ion-icon>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </main>
+
+
+
+        <!-- ================================
+             MENU DIREITO
+        ================================= -->
+
+        <aside class="sidebar-right">
+
+
+            <!-- RÁDIO LO-FI -->
+
+            <div class="widget-card lofi-widget">
+
+                <h3>
+
+                    <ion-icon name="headset-outline"></ion-icon>
+
+                    Rádio Lo-Fi Sukishi
+
+                </h3>
+
+
+                <p>
+
+                    Som ambiente para ler e escrever
+
+                </p>
+
+
+                <div class="lofi-controls">
+
+                    <button
+                        type="button"
+                        class="btn-play"
+                    >
+
+                        <ion-icon name="play-outline"></ion-icon>
+
+                    </button>
+
+
+                    <span>
+
+                        Relaxing Beats 24/7
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- DESAFIO -->
+
+            <div class="widget-card challenge-widget">
+
+                <h3>
+
+                    <ion-icon name="trophy-outline"></ion-icon>
+
+                    Desafio da Semana
+
+                </h3>
+
+
+                <p>
+
+                    Escreve um microconto de até 100 palavras
+                    sobre um dia de chuva na cidade.
+
+                </p>
+
+
+                <button
+                    type="button"
+                    class="btn-outline"
+                    id="btnParticipar"
+                >
+
+                    Participar
+
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="footer">
+
+
+        <div class="footer-container">
+
+
+            <!-- LOGO -->
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+
+                    <ion-icon name="infinite-outline"></ion-icon>
+
+                    <span>Sukishi</span>
+
+                </div>
+
+
+                <p>
+
+                    Um cantinho para pessoas que gostam
+                    de livros, escrita, poesia e histórias.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- EXPLORAR -->
+
+            <div class="footer-column">
+
+                <h3>Explorar</h3>
+
+                <a href="index.html">
+                    Feed
+                </a>
+
+                <a href="biblioteca.html">
+                    Biblioteca
+                </a>
+
+                <a href="clubes.html">
+                    Clubes
+                </a>
+
+            </div>
+
+
+
+            <!-- COMUNIDADE -->
+
+            <div class="footer-column">
+
+                <h3>Comunidade</h3>
+
+                <a href="escrita.html">
+                    Escrita Criativa
+                </a>
+
+                <a href="recomendacoes.html">
+                    Recomendações
+                </a>
+
+                <a href="poesia.html">
+                    Poesia
+                </a>
+
+                <a href="lofi.html">
+                    Cantinho Lo-Fi
+                </a>
+
+            </div>
+
+
+
+            <!-- SUKISHI -->
+
+            <div class="footer-column">
+
+                <h3>Sukishi</h3>
+
+                <a href="#">
+                    Sobre nós
+                </a>
+
+                <a href="#">
+                    Termos
+                </a>
+
+                <a href="#">
+                    Privacidade
+                </a>
+
+                <a href="#">
+                    Contactos
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PARTE INFERIOR -->
+
+        <div class="footer-bottom">
+
+            <p>
+
+                &copy; 2026 Sukishi.
+                Todos os direitos reservados.
+
+            </p>
+
+
+            <div class="footer-social">
+
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                >
+
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="TikTok"
+                >
+
+                    <ion-icon name="logo-tiktok"></ion-icon>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    aria-label="Discord"
+                >
+
+                    <ion-icon name="logo-discord"></ion-icon>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================================
+         JAVASCRIPT
+    ================================= -->
+
+    <script>
+
+
+        // ==========================================
+        // GOSTAR
+        // ==========================================
+
+        const botoesGostar =
+            document.querySelectorAll(".btn-like");
+
+
+        botoesGostar.forEach(function (botao) {
+
+            botao.addEventListener("click", function () {
+
+
+                const contador =
+                    botao.querySelector(".like-count");
+
+
+                const icone =
+                    botao.querySelector("ion-icon");
+
+
+                let numero =
+                    parseInt(contador.textContent);
+
+
+                // Se já gostou, retirar gosto
+
+                if (
+                    botao.classList.contains("liked")
+                ) {
+
+                    numero--;
+
+                    botao.classList.remove("liked");
+
+                    icone.setAttribute(
+                        "name",
+                        "heart-outline"
+                    );
+
+                }
+
+
+                // Se ainda não gostou, adicionar gosto
+
+                else {
+
+                    numero++;
+
+                    botao.classList.add("liked");
+
+                    icone.setAttribute(
+                        "name",
+                        "heart"
+                    );
+
+                }
+
+
+                contador.textContent = numero;
+
+            });
+
+        });
+
+
+
+        // ==========================================
+        // ABRIR / FECHAR COMENTÁRIOS
+        // ==========================================
+
+        const botoesComentario =
+            document.querySelectorAll(".btn-comment");
+
+
+        botoesComentario.forEach(function (botao) {
+
+            botao.addEventListener("click", function () {
+
+
+                const post =
+                    botao.closest(".post-card");
+
+
+                const comentarios =
+                    post.querySelector(
+                        ".comments-section"
+                    );
+
+
+                comentarios.classList.toggle(
+                    "active"
+                );
+
+            });
+
+        });
+
+
+
+        // ==========================================
+        // ENVIAR COMENTÁRIO
+        // ==========================================
+
+        const botoesEnviar =
+            document.querySelectorAll(
+                ".btn-send-comment"
+            );
+
+
+        botoesEnviar.forEach(function (botao) {
+
+            botao.addEventListener(
+                "click",
+                function () {
+
+
+                    const post =
+                        botao.closest(".post-card");
+
+
+                    const input =
+                        post.querySelector(
+                            ".comment-input"
+                        );
+
+
+                    const lista =
+                        post.querySelector(
+                            ".comment-list"
+                        );
+
+
+                    const contador =
+                        post.querySelector(
+                            ".comment-count"
+                        );
+
+
+                    const texto =
+                        input.value.trim();
+
+
+                    // Não permite comentário vazio
+
+                    if (texto === "") {
+
+                        return;
+
+                    }
+
+
+                    // Criar comentário
+
+                    const comentario =
+                        document.createElement(
+                            "div"
+                        );
+
+
+                    comentario.className =
+                        "comment";
+
+
+                    comentario.innerHTML = `
+
+                        <strong>
+                            Sukishi User
+                        </strong>
+
+                        <p></p>
+
+                    `;
+
+
+                    // Colocar texto
+
+                    comentario.querySelector(
+                        "p"
+                    ).textContent = texto;
+
+
+                    // Adicionar comentário
+
+                    lista.appendChild(
+                        comentario
+                    );
+
+
+                    // Aumentar contador
+
+                    let numero =
+                        parseInt(
+                            contador.textContent
+                        );
+
+
+                    numero++;
+
+
+                    contador.textContent =
+                        numero;
+
+
+                    // Limpar caixa
+
+                    input.value = "";
+
+
+                    // Garantir que comentários
+                    // continuam visíveis
+
+                    const comentarios =
+                        post.querySelector(
+                            ".comments-section"
+                        );
+
+
+                    comentarios.classList.add(
+                        "active"
+                    );
+
+                }
+            );
+
+        });
+
+
+
+        // ==========================================
+        // ENTER PARA ENVIAR COMENTÁRIO
+        // ==========================================
+
+        const inputsComentario =
+            document.querySelectorAll(
+                ".comment-input"
+            );
+
+
+        inputsComentario.forEach(function (input) {
+
+            input.addEventListener(
+                "keydown",
+                function (evento) {
+
+
+                    if (
+                        evento.key === "Enter"
+                    ) {
+
+                        evento.preventDefault();
+
+
+                        const formulario =
+                            input.closest(
+                                ".comment-form"
+                            );
+
+
+                        const botao =
+                            formulario.querySelector(
+                                ".btn-send-comment"
+                            );
+
+
+                        botao.click();
+
+                    }
+
+                }
+            );
+
+        });
+
+
+
+        // ==========================================
+        // PARTILHAR
+        // ==========================================
+
+        const botoesPartilhar =
+            document.querySelectorAll(
+                ".btn-share"
+            );
+
+
+        botoesPartilhar.forEach(function (botao) {
+
+            botao.addEventListener(
+                "click",
+                async function () {
+
+
+                    try {
+
+
+                        // Copiar endereço da página
+
+                        await navigator.clipboard.writeText(
+                            window.location.href
+                        );
+
+
+                        // Alterar botão
+
+                        botao.innerHTML = `
+
+                            <ion-icon
+                                name="checkmark-outline">
+                            </ion-icon>
+
+                            Link copiado!
+
+                        `;
+
+
+                        // Voltar ao normal
+
+                        setTimeout(
+                            function () {
+
+                                botao.innerHTML = `
+
+                                    <ion-icon
+                                        name="share-social-outline">
+                                    </ion-icon>
+
+                                    Partilhar
+
+                                `;
+
+                            },
+                            2000
+                        );
+
+
+                    }
+
+                    catch (erro) {
+
+
+                        alert(
+                            "Não foi possível copiar o link."
+                        );
+
+
+                    }
+
+                }
+            );
+
+        });
+
+
+
+        // ==========================================
+        // DESAFIO DA SEMANA
+        // ==========================================
+
+        const btnParticipar =
+            document.getElementById(
+                "btnParticipar"
+            );
+
+
+        btnParticipar.addEventListener(
+            "click",
+            function () {
+
+
+                btnParticipar.innerHTML = `
+                    Participando ✓
+                `;
+
+
+                btnParticipar.disabled = true;
+
+            }
+        );
+
+
+    </script>
+
+</body>
+</html>
